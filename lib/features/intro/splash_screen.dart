@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:telead/core/constants/app_images.dart';
-import 'package:telead/core/functions/navigation.dart';
-import 'package:telead/core/theme/colors.dart';
-import 'package:telead/features/intro/lets_you_in_screen.dart';
+import '../../core/constants/app_images.dart';
+import '../../core/functions/navigation.dart';
+import '../../core/theme/colors.dart';
+import '../auth/pages/login_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -15,7 +15,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     Future.delayed(Duration(seconds: 10), () {
-      pushReplacement(context, LetsYouInScreen());
+      pushReplacement(context, LoginScreen());
     });
 
     super.initState();
