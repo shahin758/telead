@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import '../../../core/functions/navigation.dart';
+import 'forgot_password.dart';
 import '../../../core/constants/app_images.dart';
 import '../../../core/functions/validation.dart';
 import '../../../core/theme/colors.dart';
@@ -102,7 +104,9 @@ class _LoginScreenState extends State<LoginScreen> {
                       Align(
                         alignment: AlignmentGeometry.centerRight,
                         child: TextButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            pushTo(context, SelectionScreen());
+                          },
                           child: Text(
                             "Forgot Password",
                             style: TextStyles.caption1,
