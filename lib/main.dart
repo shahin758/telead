@@ -1,8 +1,8 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
-import 'core/theme/themes.dart';
 
+import 'core/theme/themes.dart';
 import 'features/intro/splash_screen.dart';
 
 void main() {
