@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:telead/core/functions/navigation.dart';
+import 'package:telead/features/search/search_screen.dart';
 import '../../../core/theme/text_styles.dart';
 import '../../../core/widgets/main_button.dart';
 
@@ -15,15 +17,23 @@ class SelectionScreenState extends State<SelectionScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Forgot Password")),
+      appBar: AppBar(
+        title: Text(
+          "Forgot Password",
+          style: TextStyles.title.copyWith(
+            fontSize: 21,
+            fontWeight: FontWeight.w600,
+          ),
+        ),
+        leadingWidth: 30,
+        centerTitle: false,
+      ),
       body: Padding(
         padding: const EdgeInsets.all(20.0),
 
         child: Column(
           mainAxisAlignment: MainAxisAlignment.end,
-          // crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            // center content
             Text(
               "Select which contact details should we use to reset your password",
               textAlign: TextAlign.center,
@@ -32,7 +42,7 @@ class SelectionScreenState extends State<SelectionScreen> {
             SizedBox(height: 30),
 
             // Card for Email
-            _buildSelectionCard(
+            selectioncard(
               index: 0,
               icon: Icons.email,
               title: "via Email:",
@@ -42,14 +52,19 @@ class SelectionScreenState extends State<SelectionScreen> {
             SizedBox(height: 20),
 
             // Card for SMS
-            _buildSelectionCard(
+            selectioncard(
               index: 1,
               icon: Icons.message,
               title: "via SMS:",
               value: "+1 234 **** 567",
             ),
             SizedBox(height: 40),
-            MainButton(text: "Continue", onPressed: () {}),
+            MainButton(
+              text: "Continue",
+              onPressed: () {
+                pushTo(context, SearchScreen());
+              },
+            ),
             SizedBox(height: 100),
           ],
         ),
@@ -57,7 +72,7 @@ class SelectionScreenState extends State<SelectionScreen> {
     );
   }
 
-  Widget _buildSelectionCard({
+  Widget selectioncard({
     required int index,
     required IconData icon,
     required String title,
@@ -80,7 +95,7 @@ class SelectionScreenState extends State<SelectionScreen> {
           ),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(0.05),
+              color: Colors.black.withValues(alpha: (0.05)),
               blurRadius: 10,
               offset: Offset(0, 5),
             ),
@@ -90,7 +105,7 @@ class SelectionScreenState extends State<SelectionScreen> {
           children: [
             CircleAvatar(
               radius: 30,
-              backgroundColor: Colors.blueAccent.withOpacity(0.1),
+              backgroundColor: Colors.blueAccent.withValues(alpha: (0.1)),
               child: Icon(icon, color: Colors.blueAccent, size: 30),
             ),
             SizedBox(width: 20),
