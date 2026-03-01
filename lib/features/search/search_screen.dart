@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:telead/core/functions/navigation.dart';
 import 'package:telead/core/theme/colors.dart';
 import 'package:telead/core/theme/text_styles.dart';
+import 'package:telead/features/courses/pages/popular_courses.dart';
 
 import '../../core/widgets/custom_text_form_field.dart';
 
@@ -34,149 +36,147 @@ class _SearchScreenState extends State<SearchScreen> {
         centerTitle: false,
         leadingWidth: 30,
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(20),
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: const EdgeInsets.all(20),
 
-        child: Column(
-          spacing: 15,
-          children: [
-            CustomTextFormField(
-              focusNode: focusNode,
-              onChanged: (value) {
-                setState(() {
-                  searchkey = value;
-                });
-              },
-              hintText: "search for",
-              prefixIcon: Icon(Icons.search),
-              suffixIcon: Container(
-                height: 38,
-                width: 38,
-                margin: const EdgeInsets.symmetric(horizontal: 5, vertical: 5),
-                padding: EdgeInsets.all(5),
-                decoration: BoxDecoration(
-                  shape: BoxShape.rectangle,
-                  color: AppColors.primaryColor,
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                child: Icon(Icons.search, color: AppColors.whiteColor),
-              ),
-            ),
-            Row(
-              children: [
-                Text(
-                  "Recents Search",
-                  style: TextStyles.body.copyWith(
-                    color: AppColors.blackColor,
-                    fontWeight: FontWeight.w600,
+          child: Column(
+            spacing: 15,
+            children: [
+              CustomTextFormField(
+                focusNode: focusNode,
+                onChanged: (value) {
+                  setState(() {
+                    searchkey = value;
+                  });
+                },
+                hintText: "search for",
+                prefixIcon: Icon(Icons.search),
+                suffixIcon: Container(
+                  height: 30,
+                  width: 30,
+
+                  padding: EdgeInsets.all(2),
+                  decoration: BoxDecoration(
+                    shape: BoxShape.rectangle,
+                    color: AppColors.primaryColor,
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: IconButton(
+                    onPressed: () {
+                    pushTo(context, PopularCourses());
+                    },
+                    icon: Icon(Icons.search),
+                    color: AppColors.whiteColor,
                   ),
                 ),
-                Spacer(),
-                TextButton(
-                  onPressed: () {},
-                  child: Text(
-                    "See All",
-                    style: TextStyles.caption1.copyWith(
-                      fontWeight: FontWeight.w500,
-                      color: AppColors.primaryColor,
+              ),
+              Row(
+                children: [
+                  Text(
+                    "Recents Search",
+                    style: TextStyles.body.copyWith(
+                      color: AppColors.blackColor,
+                      fontWeight: FontWeight.w600,
                     ),
                   ),
-                ),
-              ],
-            ),
-            Row(
-              children: [
-                Text(
-                  "3D Design",
-                  style: TextStyles.body.copyWith(
-                    color: AppColors.hintTextColor,
-                    fontWeight: FontWeight.w700,
+                  Spacer(),
+                  TextButton(
+                    onPressed: () {},
+                    child: Text(
+                      "See All",
+                      style: TextStyles.caption1.copyWith(
+                        fontWeight: FontWeight.w500,
+                        color: AppColors.primaryColor,
+                      ),
+                    ),
                   ),
-                ),
-                Spacer(),
-                IconButton(
-                  onPressed: () {},
-                  icon: Icon(Icons.close, color: AppColors.blackColor),
-                ),
-              ],
-            ),
-            Row(
-              children: [
-                Text(
-                  "Graphic Design",
-                  style: TextStyles.body.copyWith(
-                    color: AppColors.hintTextColor,
-                    fontWeight: FontWeight.w700,
+                ],
+              ),
+              Row(
+                children: [
+                  Text(
+                    "3D Design",
+                    style: TextStyles.body.copyWith(
+                      color: AppColors.hintTextColor,
+                      fontWeight: FontWeight.w700,
+                    ),
                   ),
-                ),
-                Spacer(),
-                IconButton(
-                  onPressed: () {},
-                  icon: Icon(Icons.close, color: AppColors.blackColor),
-                ),
-              ],
-            ),
-            Row(
-              children: [
-                Text(
-                  "Programming",
-                  style: TextStyles.body.copyWith(
-                    color: AppColors.hintTextColor,
-                    fontWeight: FontWeight.w700,
+                  Spacer(),
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(Icons.close, color: AppColors.blackColor),
                   ),
-                ),
-                Spacer(),
-                IconButton(
-                  onPressed: () {},
-                  icon: Icon(Icons.close, color: AppColors.blackColor),
-                ),
-              ],
-            ),
-            Row(
-              children: [
-                Text(
-                  "SEO & Marketing",
-                  style: TextStyles.body.copyWith(
-                    color: AppColors.hintTextColor,
-                    fontWeight: FontWeight.w700,
+                ],
+              ),
+              Row(
+                children: [
+                  Text(
+                    "Graphic Design",
+                    style: TextStyles.body.copyWith(
+                      color: AppColors.hintTextColor,
+                      fontWeight: FontWeight.w700,
+                    ),
                   ),
-                ),
-                Spacer(),
-                IconButton(
-                  onPressed: () {},
-                  icon: Icon(Icons.close, color: AppColors.blackColor),
-                ),
-              ],
-            ),
-            Row(
-              children: [
-                Text(
-                  "Web Development",
-                  style: TextStyles.body.copyWith(
-                    color: AppColors.hintTextColor,
-                    fontWeight: FontWeight.w700,
+                  Spacer(),
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(Icons.close, color: AppColors.blackColor),
                   ),
-                ),
-                Spacer(),
-                IconButton(
-                  onPressed: () {},
-                  icon: Icon(Icons.close, color: AppColors.blackColor),
-                ),
-              ],
-            ),
-          ],
+                ],
+              ),
+              Row(
+                children: [
+                  Text(
+                    "Programming",
+                    style: TextStyles.body.copyWith(
+                      color: AppColors.hintTextColor,
+                      fontWeight: FontWeight.w700,
+                    ),
+                  ),
+                  Spacer(),
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(Icons.close, color: AppColors.blackColor),
+                  ),
+                ],
+              ),
+              Row(
+                children: [
+                  Text(
+                    "SEO & Marketing",
+                    style: TextStyles.body.copyWith(
+                      color: AppColors.hintTextColor,
+                      fontWeight: FontWeight.w700,
+                    ),
+                  ),
+                  Spacer(),
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(Icons.close, color: AppColors.blackColor),
+                  ),
+                ],
+              ),
+              Row(
+                children: [
+                  Text(
+                    "Web Development",
+                    style: TextStyles.body.copyWith(
+                      color: AppColors.hintTextColor,
+                      fontWeight: FontWeight.w700,
+                    ),
+                  ),
+                  Spacer(),
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(Icons.close, color: AppColors.blackColor),
+                  ),
+                ],
+              ),
+            ],
+          ),
         ),
       ),
     );
   }
 }
-
-// List getProductsByName(String searchkey) {
-//   List filterdProducts = [];
-//   for (var product in allProducts) {
-//     if (product.name.toLowerCase().contains(searchkey)) {
-//       filterdProducts.add(product);
-//     }
-//   }
-//   return filterdProducts;
-// }
