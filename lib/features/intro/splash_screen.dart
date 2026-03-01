@@ -16,11 +16,12 @@ class SplashScreen extends StatefulWidget {
 class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
-    Future.delayed(Duration(seconds: 10), () {
-      pushReplacement(context, LetsYouInScreen());
-    });
-
     super.initState();
+    Future.delayed(const Duration(seconds: 3), () {
+  if (mounted) {
+    pushReplacement(context, LetsYouInScreen());
+  }
+});
   }
 
   @override
@@ -47,7 +48,7 @@ class _SplashScreenState extends State<SplashScreen> {
                 ),
               ),
               Transform.rotate(
-                angle: pi / 4, 
+                angle: pi / 4,
                 child: Container(
                   width: 220,
                   height: 220,

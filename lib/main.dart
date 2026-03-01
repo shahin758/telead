@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:telead/core/theme/themes.dart';
 import 'dart:io';
 import 'package:telead/features/intro/splash_screen.dart';
 
@@ -11,20 +12,16 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  MaterialApp(
-        debugShowCheckedModeBanner: false,
-        builder:(context, child) {
-               return SafeArea(
+    return MaterialApp(
+      theme: AppThemes.lightTheme,
+      debugShowCheckedModeBanner: false,
+      builder: (context, child) {
+        return SafeArea(
           top: false,
           bottom: Platform.isAndroid,
           child: child ?? SizedBox(),
         );
-
-        },
-
-
-
-
+      },
       home: SplashScreen(),
     );
   }

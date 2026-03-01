@@ -1,11 +1,142 @@
 import 'package:flutter/material.dart';
-
+import 'package:telead/core/constants/app_images.dart';
+import 'package:telead/core/functions/navigation.dart';
+import 'package:telead/core/theme/colors.dart';
+import 'package:telead/core/theme/text_style.dart';
+import 'package:telead/core/widgets/main_button.dart';
+import 'package:telead/features/pages/register_now.dart';
+import 'package:telead/features/widgets/textspan.dart';
 
 class LetsYouInScreen extends StatelessWidget {
-  const  LetsYouInScreen({super.key});
+  const LetsYouInScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Padding(
+        padding: const EdgeInsets.all(20),
+        child: Column(
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(80),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Image.asset(AppImages.logo22),
+                  SizedBox(width: 12),
+                  Image.asset(AppImages.text),
+                ],
+              ),
+            ),
+            SizedBox(height: 30),
+            Text(
+              'Let’s you in',
+              style: TextStyles.title.copyWith(
+                fontFamily: 'Mulish',
+                fontWeight: FontWeight.w700,
+              ),
+            ),
+            SizedBox(height: 30),
+            Padding(
+              padding: const EdgeInsets.all(30),
+              child: Container(
+                height: 56,
+                padding: const EdgeInsets.symmetric(horizontal: 16),
+                decoration: BoxDecoration(
+                  color: AppColors.backgroundcolor,
+                  borderRadius: BorderRadius.circular(30),
+                  boxShadow: [
+                    BoxShadow(
+                      color: AppColors.blackcolor,
+                      blurRadius: 0,
+                      offset: Offset(0, 0),
+                    ),
+                  ],
+                ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    CircleAvatar(
+                      radius: 30,
+                      backgroundColor: AppColors.backgroundcolor,
+                      child: Image.asset(AppImages.google, height: 70),
+                    ),
+                    const SizedBox(width: 16),
+                    Text(
+                      'Continue with Google',
+                      style: TextStyles.caption2.copyWith(
+                        fontWeight: FontWeight.w800,
+                        color: AppColors.greycolor,
+                        fontSize: 20,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+
+            Padding(
+              padding: const EdgeInsets.all(10),
+              child: Container(
+                height: 56,
+                padding: const EdgeInsets.symmetric(horizontal: 16),
+                decoration: BoxDecoration(
+                  color: AppColors.backgroundcolor,
+                  borderRadius: BorderRadius.circular(30),
+                  boxShadow: [
+                    BoxShadow(
+                      color: AppColors.blackcolor,
+                      blurRadius: 0,
+                      offset: Offset(0, 0),
+                    ),
+                  ],
+                ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    CircleAvatar(
+                      radius: 30,
+                      backgroundColor: AppColors.backgroundcolor,
+                      child: Image.asset(AppImages.circle, height: 70),
+                    ),
+                    const SizedBox(width: 16),
+                    Text(
+                      'Continue with Apple',
+                      style: TextStyles.caption2.copyWith(
+                        fontWeight: FontWeight.w800,
+                        color: AppColors.greycolor,
+                        fontSize: 20,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            SizedBox(height: 59),
+            Text(
+              '( Or )',
+              style: TextStyles.caption1.copyWith(color: AppColors.greycolor),
+            ),
+            const SizedBox(height: 30),
+            Row(
+              children: [
+                Row(
+                  children: [
+                    MainButton(
+                      text: 'Sign In with Your Account',
+                      onPressed: () {
+                        pushReplacement(context, RegisterNow());
+                      },
+                    ),
+                  ],
+                ),
+              ],
+            ),
+            SizedBox(height: 40),
+            Textspan(text: 'SIGN UP', text2: 'Don’t have an Account?'),
+          ],
+        ),
+      ),
+    );
   }
 }
