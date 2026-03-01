@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
+import '../functions/validation.dart';
 
 class PasswordTextFormField extends StatefulWidget {
-  const PasswordTextFormField({ super.key, required this.hintText, required this.prefixIcon, required this.suffixIcon, this.keyboardType,});
-   
+  const PasswordTextFormField({super.key, required this.hintText, this.prefixIcon});
+
   final String hintText;
-  final Icon prefixIcon;
-final Icon suffixIcon;
- final TextInputType? keyboardType;
+  final Widget? prefixIcon;
+
 
   @override
   State<PasswordTextFormField> createState() => _PasswordTextFormFieldState();
@@ -15,28 +15,32 @@ final Icon suffixIcon;
 
 class _PasswordTextFormFieldState extends State<PasswordTextFormField> {
   bool obscureText = true;
+
   @override
   Widget build(BuildContext context) {
     return TextFormField(
-      keyboardType:TextInputType.visiblePassword ,
-      onTapOutside:(event){
-        FocusManager.instance.primaryFocus?.unfocus();
-      } ,
       obscureText: obscureText,
       decoration: InputDecoration(
-        hintText: widget.hintText,
         prefixIcon: widget.prefixIcon,
-        suffixIcon: IconButton(onPressed: (){
-          setState(() {
-            obscureText = !obscureText;
-          });
-        },
-         icon: obscureText
-         ? Icon(Icons.visibility_off)
-         :Icon(Icons.remove_red_eye))
-       
+        hintText: widget.hintText,
+        // labelText: 'Email',
+        suffixIcon: IconButton(
+          onPressed: () {
+            setState(() {
+              obscureText = !obscureText;
+            });
+          },
+          icon: Icon(obscureText ? Icons.visibility_off : Icons.remove_red_eye),
+        ),
       ),
-     
+      validator: (input) {
+        if (isPasswordValid(input!)) {
+          return 'Please enter your password';
+        } else if (input.length < 6) {
+          return 'Password must be at least 6 characters';
+        }
+        return null;
+      },
     );
   }
 }

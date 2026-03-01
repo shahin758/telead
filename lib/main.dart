@@ -1,7 +1,9 @@
-import 'package:flutter/material.dart';
-import 'package:telead/core/theme/themes.dart';
 import 'dart:io';
-import 'package:telead/features/intro/splash_screen.dart';
+
+import 'package:flutter/material.dart';
+
+import 'core/theme/themes.dart';
+import 'features/intro/splash_screen.dart';
 
 void main() {
   runApp(const MainApp());
@@ -13,7 +15,8 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: AppThemes.lightTheme,
+      theme: AppThemes.lighttheme,
+
       debugShowCheckedModeBanner: false,
       builder: (context, child) {
         return SafeArea(
@@ -22,6 +25,7 @@ class MainApp extends StatelessWidget {
           child: child ?? SizedBox(),
         );
       },
+
       home: SplashScreen(),
     );
   }
