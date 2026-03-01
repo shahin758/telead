@@ -46,6 +46,7 @@ abstract class AppThemes {
       ),
     ),
     inputDecorationTheme: InputDecorationTheme(
+      
       hintStyle: TextStyles.caption1,
       fillColor: AppColors.whiteColor,
       filled: true,
