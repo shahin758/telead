@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:telead/core/functions/navigation.dart';
-import 'package:telead/core/theme/colors.dart';
-import 'package:telead/core/theme/text_style.dart';
-import 'package:telead/features/pages/single_course_details_curr.dart';
+import '../../core/functions/navigation.dart';
+import '../../core/theme/colors.dart';
+import '../../core/theme/text_style.dart';
+import '../pages/single_course_details_curr.dart';
 
 class ListTilePopularCourses extends StatelessWidget {
   const ListTilePopularCourses({super.key, required this.text});

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:telead/core/theme/colors.dart';
+import '../../../core/theme/colors.dart';
 
 class CourseCard extends StatelessWidget {
   const CourseCard({super.key, required this.path});
@@ -13,7 +13,7 @@ class CourseCard extends StatelessWidget {
       child: Container(
         width: double.infinity,
         decoration: BoxDecoration(
-          color: AppColors.whiteColor,
+          color: AppColors.whitecolor,
           borderRadius: BorderRadius.circular(20),
           border: Border.all(color: AppColors.backgroundcolor),
           boxShadow: [
@@ -66,7 +66,7 @@ class CourseCard extends StatelessWidget {
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 16,
-                        color: AppColors.blackColor,
+                        color: AppColors.blackcolor,
                       ),
                     ),
                     SizedBox(height: 4),
@@ -85,7 +85,7 @@ class CourseCard extends StatelessWidget {
                           "\$42",
                           style: TextStyle(
                             decoration: TextDecoration.lineThrough,
-                            color: AppColors.greyColor,
+                            color: AppColors.greycolor,
                             fontSize: 12,
                           ),
                         ),
@@ -99,7 +99,7 @@ class CourseCard extends StatelessWidget {
                           " 4.2  |  7830 Std",
                           style: TextStyle(
                             fontSize: 12,
-                            color: AppColors.greyColor,
+                            color: AppColors.greycolor,
                           ),
                         ),
                       ],

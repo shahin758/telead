@@ -1,37 +1,65 @@
 import 'package:flutter/material.dart';
 
-import '../theme/colors.dart';
-import '../theme/text_styles.dart';
+import 'package:telead/core/theme/colors.dart';
+import 'package:telead/core/theme/text_style.dart';
 
 class MainButton extends StatelessWidget {
+  const MainButton({
+    super.key,
+    required this.text,
+    required this.onPressed,
+    this.spacing = 10,
+  });
   final String text;
-  final VoidCallback onPressed;
-
-  const MainButton({super.key, required this.text, required this.onPressed});
+  final Function() onPressed;
+  final double spacing;
 
   @override
   Widget build(BuildContext context) {
-    return ElevatedButton(
-      onPressed: onPressed,
+    return SizedBox(
+      width:350,
+      height: 60,
+      child: ElevatedButton(
+        onPressed: onPressed,
+        style: ElevatedButton.styleFrom(
+          backgroundColor: AppColors.primaryColor,
 
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          const SizedBox(width: 50),
-          Text(text, style: TextStyles.subtitle),
-          Container(
-            padding: const EdgeInsets.all(10),
-            decoration: const BoxDecoration(
-              color: Colors.white,
-              shape: BoxShape.circle,
-            ),
-            child: const Icon(
-              Icons.arrow_forward_rounded,
-              color: AppColors.primaryColor,
-              size: 30,
-            ),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(30),
           ),
-        ],
+         padding: const EdgeInsets.all(10),
+        ),
+        child: Stack(
+          alignment: Alignment.center,
+          children: [
+            const SizedBox(width: 24),
+            Text(
+              text,
+              style: TextStyles.body.copyWith(
+                color: AppColors.whitecolor,
+                fontFamily: 'Jost',
+              ),
+            ),
+
+            Align(
+              alignment: Alignment.centerRight,
+              child: Container(
+                width: 44,
+                height: 44,
+                decoration: BoxDecoration(
+                  color: AppColors.whitecolor,
+                  shape: BoxShape.circle,
+                ),
+                child: const Icon(
+                  Icons.arrow_forward,
+                  size: 25,
+                  color: AppColors.primaryColor,
+                ),
+              ),
+            ),
+            const SizedBox(width: 12),
+          ],
+        ),
       ),
     );
   }

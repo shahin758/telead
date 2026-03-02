@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:telead/core/theme/text_style.dart';
 
 import '../constants/app_fonts.dart';
 import 'colors.dart';
-import 'text_styles.dart';
 
 abstract class AppThemes {
   static ThemeData get lighttheme => ThemeData(
@@ -48,7 +48,7 @@ abstract class AppThemes {
     inputDecorationTheme: InputDecorationTheme(
       
       hintStyle: TextStyles.caption1,
-      fillColor: AppColors.whiteColor,
+      fillColor: AppColors.whitecolor,
       filled: true,
       border: OutlineInputBorder(
         borderRadius: BorderRadius.circular(12),
@@ -58,7 +58,7 @@ abstract class AppThemes {
     colorScheme: ColorScheme.fromSeed(
       seedColor: AppColors.primaryColor,
       // text color
-      onSurface: AppColors.blackColor,
+      onSurface: AppColors.blackcolor,
     ),
   );
 }

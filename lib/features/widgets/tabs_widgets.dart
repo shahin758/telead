@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:telead/core/theme/colors.dart';
-import 'package:telead/core/theme/text_style.dart';
+import '../../core/theme/colors.dart';
+import '../../core/theme/text_style.dart';
 
 class TabsWidgets extends StatelessWidget {
   const TabsWidgets({super.key});

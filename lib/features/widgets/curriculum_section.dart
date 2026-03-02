@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:telead/core/theme/colors.dart';
-import 'package:telead/features/widgets/lessons_widgets.dart';
-import 'package:telead/features/widgets/textspan.dart';
+
+import '../../core/theme/colors.dart';
+import 'lessons_widgets.dart';
+import 'textspan.dart';
 
 class CurriculumSection extends StatelessWidget {
   const CurriculumSection({
