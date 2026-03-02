@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:telead/core/constants/app_images.dart';
-import 'package:telead/core/theme/colors.dart';
-import 'package:telead/core/theme/text_style.dart';
+import '../../core/constants/app_images.dart';
+import '../../core/theme/colors.dart';
+import '../../core/theme/text_style.dart';
 
 class PopularCourses1 extends StatelessWidget {
   const PopularCourses1({

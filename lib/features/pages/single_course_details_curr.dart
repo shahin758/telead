@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:telead/core/theme/colors.dart';
-import 'package:telead/features/widgets/curriculum_section.dart';
-import 'package:telead/features/widgets/enroll_course.dart';
-import 'package:telead/features/widgets/header_info.dart';
-import 'package:telead/features/widgets/tabs_widgets.dart';
+import '../../core/theme/colors.dart';
+import '../widgets/curriculum_section.dart';
+import '../widgets/enroll_course.dart';
+import '../widgets/header_info.dart';
+import '../widgets/tabs_widgets.dart';
 
 class SingleCourseDetailsCurr extends StatelessWidget {
   const SingleCourseDetailsCurr({super.key});

@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:telead/core/functions/navigation.dart';
-import 'package:telead/features/search/search_screen.dart';
-import '../../../core/theme/text_styles.dart';
+import 'package:telead/core/theme/text_style.dart';
+
+import '../../../core/functions/navigation.dart';
 import '../../../core/widgets/main_button.dart';
+import '../../search/search_screen.dart';
 
 class SelectionScreen extends StatefulWidget {
   const SelectionScreen({super.key});

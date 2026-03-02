@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:telead/core/functions/navigation.dart';
-import 'package:telead/core/theme/colors.dart';
-import 'package:telead/core/theme/text_style.dart';
-import 'package:telead/features/pages/category_screen.dart';
+
+import '../../core/functions/navigation.dart';
+import '../../core/theme/colors.dart';
+import '../../core/theme/text_style.dart';
+import '../pages/category_screen.dart';
 
 class ListTileHomeScreen extends StatelessWidget {
   const ListTileHomeScreen({super.key});

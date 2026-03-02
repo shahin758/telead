@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:telead/core/theme/colors.dart';
+import '../theme/colors.dart';
 
 class CustomeTextFormField extends StatelessWidget {
   const CustomeTextFormField({

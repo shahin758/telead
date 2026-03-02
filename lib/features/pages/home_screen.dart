@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:telead/core/constants/app_images.dart';
-import 'package:telead/core/theme/colors.dart';
-import 'package:telead/core/theme/text_style.dart';
-import 'package:telead/core/widgets/custome_text_form_field.dart';
-import 'package:telead/features/widgets/list_tile_home_screen.dart';
-import 'package:telead/features/widgets/list_tile_popular_courses.dart';
-import 'package:telead/features/widgets/popular_courses1.dart';
-import 'package:telead/features/widgets/top_mentors_list.dart';
+import '../../core/constants/app_images.dart';
+import '../../core/theme/colors.dart';
+import '../../core/theme/text_style.dart';
+import '../../core/widgets/custome_text_form_field.dart';
+import '../widgets/list_tile_home_screen.dart';
+import '../widgets/list_tile_popular_courses.dart';
+import '../widgets/popular_courses1.dart';
+import '../widgets/top_mentors_list.dart';
 
 //import 'package:buttons_tabbar/buttons_tabbar.dart';
 class HomeScreen extends StatefulWidget {

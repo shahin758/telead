@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:telead/core/functions/navigation.dart';
-import 'package:telead/core/theme/colors.dart';
-import 'package:telead/core/theme/text_style.dart';
-import 'package:telead/features/pages/register_now.dart';
+import '../../core/functions/navigation.dart';
+import '../../core/theme/colors.dart';
+import '../../core/theme/text_style.dart';
+import '../pages/register_now.dart';
 
 class Textspan extends StatelessWidget {
   const Textspan({super.key, required this.text, required this.text2});

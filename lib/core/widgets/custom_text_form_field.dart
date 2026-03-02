@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:telead/core/theme/colors.dart';
+
+import '../theme/colors.dart';
 
 class CustomTextFormField extends StatelessWidget {
   const CustomTextFormField({
@@ -30,7 +31,7 @@ class CustomTextFormField extends StatelessWidget {
        decoration: BoxDecoration(
               boxShadow: [
                 BoxShadow(
-                  color: AppColors.greyColor.withValues(alpha: (0.1)),
+                  color: AppColors.greycolor.withValues(alpha: (0.1)),
                   blurRadius: 12,
                   offset: Offset(0, 3),
                 ),

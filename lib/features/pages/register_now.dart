@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:telead/core/constants/app_images.dart';
-import 'package:telead/core/functions/navigation.dart';
-import 'package:telead/core/theme/colors.dart';
-import 'package:telead/core/theme/text_style.dart';
-import 'package:telead/core/widgets/custome_text_form_field.dart';
-import 'package:telead/core/widgets/main_button.dart';
-import 'package:telead/core/widgets/password_text_form_field.dart';
-import 'package:telead/features/intro/lets_you_in_screen.dart';
-import 'package:telead/features/main/main_app_screen.dart';
-import 'package:telead/features/widgets/textspan.dart';
+import '../../core/constants/app_images.dart';
+import '../../core/functions/navigation.dart';
+import '../../core/theme/colors.dart';
+import '../../core/theme/text_style.dart';
+import '../../core/widgets/custome_text_form_field.dart';
+import '../../core/widgets/main_button.dart';
+import '../../core/widgets/password_text_form_field.dart';
+import '../intro/lets_you_in_screen.dart';
+import '../main/main_app_screen.dart';
+import '../widgets/textspan.dart';
 
 class RegisterNow extends StatelessWidget {
   const RegisterNow({super.key});

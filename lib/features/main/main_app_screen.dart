@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:telead/core/constants/app_images.dart';
-import 'package:telead/core/theme/colors.dart';
-import 'package:telead/core/widgets/custom_svg_picture.dart';
-import 'package:telead/features/pages/home_screen.dart';
+import '../../core/constants/app_images.dart';
+import '../../core/theme/colors.dart';
+import '../../core/widgets/custom_svg_picture.dart';
+import '../pages/home_screen.dart';
 
 class MainAppScreen extends StatefulWidget {
   const MainAppScreen({super.key});

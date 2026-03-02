@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:telead/core/constants/app_images.dart';
-import 'package:telead/core/theme/colors.dart';
-import 'package:telead/core/theme/text_styles.dart';
-import 'package:telead/features/courses/widgets/course_card.dart';
+import '../../../core/constants/app_images.dart';
+import '../../../core/theme/colors.dart';
+import '../widgets/course_card.dart';
+
+import '../../../core/theme/text_style.dart' show TextStyles;
 
 class PopularCourses extends StatelessWidget {
   const PopularCourses({super.key});
@@ -36,16 +37,16 @@ class PopularCourses extends StatelessWidget {
               height: 40,
               child: TabBar(
                 indicatorSize: TabBarIndicatorSize.tab,
-                indicatorColor: AppColors.greencolor,
+                indicatorColor: AppColors.green,
                 dividerColor: Colors.transparent,
-                labelColor: AppColors.whiteColor,
-                unselectedLabelColor: AppColors.blackColor,
+                labelColor: AppColors.whitecolor,
+                unselectedLabelColor: AppColors.blackcolor,
                 isScrollable: true,
                 padding: EdgeInsets.zero,
                 indicatorPadding: EdgeInsets.zero,
                 indicator: BoxDecoration(
                   borderRadius: BorderRadius.circular(20),
-                  color: AppColors.greencolor,
+                  color: AppColors.green,
                 ),
                 tabs: categories.map((category) {
                   return Tab(
