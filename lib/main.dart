@@ -1,6 +1,8 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
+import 'package:telead/features/create%20New%20password/page/createPassword_screen.dart';
+import 'package:telead/features/verify/page/verify_password.dart';
 
 import 'core/theme/themes.dart';
 import 'features/intro/splash_screen.dart';
@@ -26,7 +28,7 @@ class MainApp extends StatelessWidget {
         );
       },
 
-      home: SplashScreen(),
+      home: VerifyForgotPasswordScreen(),
     );
   }
 }

@@ -16,3 +16,13 @@ abstract class AppColors {
   static const Color text = Color(0xff202244);
   static const Color box = Color(0xffE8F1FF);
 }
+
+  
+
+
+
+
+
+
+
+

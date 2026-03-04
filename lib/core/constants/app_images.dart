@@ -41,4 +41,48 @@ abstract class AppImages {
   static const String black1 = 'assets/images/black1.png';
   static const String details = 'assets/images/details.png';
   static const String black = 'assets/images/black.png';
+  static const String searche = "assets/images/search.png";
+
+
+  static const String Carmen = "assets/images/Carmen.png";
+  static const String Donald = "assets/images/Donald.png";
+  static const String Elvira = "assets/images/Elvira.png";
+  static const String Patricia = "assets/images/Patricia.png";
+  static const String Scott = "assets/images/Scott.png";
+  static const String Steven = "assets/images/Steven.png";
+  static const String William = "assets/images/William.png";
+  static const String image = "assets/images/image.png";
+  static const String profileimage = "assets/images/profileimage.png";
+
+  static const String DarkMode = "assets/icons/Dark Mode.png";
+  static const String EditProfile = "assets/icons/Edit Profile.png";
+  static const String HelpCenter = "assets/icons/Help Center.png";
+  static const String IntiveFriends = "assets/icons/Intive Friends.png";
+  static const String Language = "assets/icons/language.png";
+  static const String Payment = "assets/icons/Payment.png";
+  static const String Security = "assets/icons/security.png";
+  static const String TermsConditions = "assets/icons/termsconditions.png";
+  static const String Notifications = "assets/icons/notificationss.png";
+
+  static const String arrow = "assets/icons/arrow.png";
+  static const String birthday = "assets/icons/birth day.png";
+  static const String email = "assets/icons/email.png";
+
+  static const String Branden = "assets/images/Branden.png";
+  static const String Justin = "assets/images/Justin.png";
+  static const String Marie = "assets/images/Marie.png";
+  static const String Gregory = "assets/images/Gregory.png";
+  static const String Sandra = "assets/images/Sandra.png";
+
+
+
+
+
+
+
+  
+
+
+
+
 }
