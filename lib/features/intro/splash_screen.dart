@@ -4,6 +4,11 @@ import '../../core/constants/app_images.dart';
 import '../../core/functions/navigation.dart';
 import '../../core/theme/colors.dart';
 import '../auth/pages/login_screen.dart';
+import 'package:telead/core/constants/app_images.dart';
+import 'package:telead/core/functions/navigation.dart';
+import 'package:telead/core/theme/colors.dart';
+import 'package:telead/features/mentor%20list/page/mentor_list_screen.dart';
+import 'package:telead/features/verify/page/verify_password.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -17,6 +22,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     Future.delayed(Duration(seconds: 10), () {
       pushReplacement(context, LoginScreen());
+     
     });
 
     super.initState();
