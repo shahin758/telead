@@ -36,7 +36,7 @@ class MainButton extends StatelessWidget {
             Text(
               text,
               style: TextStyles.body.copyWith(
-                color: AppColors.whitecolor,
+                color: AppColors.whiteColor,
                 fontFamily: 'Jost',
               ),
             ),
@@ -47,7 +47,7 @@ class MainButton extends StatelessWidget {
                 width: 44,
                 height: 44,
                 decoration: BoxDecoration(
-                  color: AppColors.whitecolor,
+                  color: AppColors.whiteColor,
                   shape: BoxShape.circle,
                 ),
                 child: const Icon(

@@ -13,7 +13,7 @@ class CustomLoginIcon extends StatelessWidget {
       width: 45,
       height: 45,
       decoration: BoxDecoration(
-        color: AppColors.whitecolor,
+        color: AppColors.whiteColor,
         borderRadius: BorderRadius.circular(30),
         boxShadow: [
           BoxShadow(

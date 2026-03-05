@@ -38,7 +38,7 @@ class PopularCourses1 extends StatelessWidget {
                 Text(
                   'Graphic Design Advanced',
                   style: TextStyles.caption1.copyWith(
-                    color: AppColors.blackcolor,
+                    color: AppColors.blackColor,
                     fontWeight: FontWeight.w700
                   ),
                 ),

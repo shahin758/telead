@@ -18,7 +18,7 @@ class HeaderInfo extends StatelessWidget {
             Text(
               "Graphic Design",
               style: TextStyles.caption1.copyWith(
-                color: AppColors.orange,
+                color: AppColors.accentColor,
                 fontWeight: FontWeight.w900,
               ),
             ),
@@ -44,14 +44,14 @@ class HeaderInfo extends StatelessWidget {
             Icon(
               Icons.videocam_outlined,
               size: 18,
-              color: AppColors.blackcolor,
+              color: AppColors.blackColor,
             ),
             Text(
               " 21 Class  |  ",
-              style: TextStyle(color: AppColors.blackcolor),
+              style: TextStyle(color: AppColors.blackColor),
             ),
-            Icon(Icons.access_time, size: 18, color: AppColors.blackcolor),
-            Text(" 42 Hours", style: TextStyle(color: AppColors.blackcolor)),
+            Icon(Icons.access_time, size: 18, color: AppColors.blackColor),
+            Text(" 42 Hours", style: TextStyle(color: AppColors.blackColor)),
             Spacer(),
             Text(
               "\$28",

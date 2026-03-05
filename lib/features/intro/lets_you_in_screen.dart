@@ -47,7 +47,7 @@ class LetsYouInScreen extends StatelessWidget {
                   borderRadius: BorderRadius.circular(30),
                   boxShadow: [
                     BoxShadow(
-                      color: AppColors.blackcolor,
+                      color: AppColors.blackColor,
                       blurRadius: 0,
                       offset: Offset(0, 0),
                     ),
@@ -66,7 +66,7 @@ class LetsYouInScreen extends StatelessWidget {
                       'Continue with Google',
                       style: TextStyles.caption2.copyWith(
                         fontWeight: FontWeight.w800,
-                        color: AppColors.greycolor,
+                        color: AppColors.greyColor,
                         fontSize: 20,
                       ),
                     ),
@@ -85,7 +85,7 @@ class LetsYouInScreen extends StatelessWidget {
                   borderRadius: BorderRadius.circular(30),
                   boxShadow: [
                     BoxShadow(
-                      color: AppColors.blackcolor,
+                      color: AppColors.blackColor,
                       blurRadius: 0,
                       offset: Offset(0, 0),
                     ),
@@ -104,7 +104,7 @@ class LetsYouInScreen extends StatelessWidget {
                       'Continue with Apple',
                       style: TextStyles.caption2.copyWith(
                         fontWeight: FontWeight.w800,
-                        color: AppColors.greycolor,
+                        color: AppColors.greyColor,
                         fontSize: 20,
                       ),
                     ),
@@ -115,7 +115,7 @@ class LetsYouInScreen extends StatelessWidget {
             SizedBox(height: 59),
             Text(
               '( Or )',
-              style: TextStyles.caption1.copyWith(color: AppColors.greycolor),
+              style: TextStyles.caption1.copyWith(color: AppColors.greyColor),
             ),
             const SizedBox(height: 30),
             Row(

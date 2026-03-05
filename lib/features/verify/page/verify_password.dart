@@ -74,7 +74,7 @@ class _VerifyForgotPasswordScreenState
               const Text(
                 "Code has been sent to (+1) ***-***-529",
                 style: TextStyle(
-                  color: AppColors.greycolor,
+                  color: AppColors.greyColor,
                   fontSize: 14,
                   fontWeight: FontWeight.w600
                   ),
@@ -94,7 +94,7 @@ class _VerifyForgotPasswordScreenState
                 child: RichText(
                   text: TextSpan(
                     style: const TextStyle(
-                        color: AppColors.greycolor, fontSize: 14),
+                        color: AppColors.greyColor, fontSize: 14),
                     children: [
                       const TextSpan(
                         text: "Resend Code in ",

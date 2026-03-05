@@ -48,7 +48,7 @@ abstract class AppThemes {
     inputDecorationTheme: InputDecorationTheme(
       
       hintStyle: TextStyles.caption1,
-      fillColor: AppColors.whitecolor,
+      fillColor: AppColors.whiteColor,
       filled: true,
       border: OutlineInputBorder(
         borderRadius: BorderRadius.circular(12),
@@ -58,7 +58,7 @@ abstract class AppThemes {
     colorScheme: ColorScheme.fromSeed(
       seedColor: AppColors.primaryColor,
       // text color
-      onSurface: AppColors.blackcolor,
+      onSurface: AppColors.blackColor,
     ),
   );
 }

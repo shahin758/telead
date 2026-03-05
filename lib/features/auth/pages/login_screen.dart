@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:telead/core/theme/text_style.dart';
-
-import '../../../core/constants/app_images.dart';
 import '../../../core/functions/navigation.dart';
 import '../../../core/functions/validation.dart';
 import '../../../core/theme/colors.dart';
@@ -11,6 +8,9 @@ import '../../../core/widgets/main_button.dart';
 import '../../../core/widgets/password_text_form_field.dart';
 import '../widgets/custom_login_icon.dart';
 import 'forgot_password.dart';
+import 'package:telead/core/theme/text_styles.dart';
+import 'package:telead/core/constants/app_images.dart';
+import 'package:telead/features/main/main_app_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -50,7 +50,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   Text(
                     "Login to Your Account to Continue your Courses",
                     style: TextStyles.caption1.copyWith(
-                      color: AppColors.greycolor,
+                      color: AppColors.greyColor,
                     ),
                   ),
                   SizedBox(height: 40),
@@ -67,7 +67,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     keyboardType: TextInputType.emailAddress,
                     prefixIcon: Icon(
                       Icons.email_outlined,
-                      color: AppColors.greycolor,
+                      color: AppColors.greyColor,
                     ),
                   ),
                   SizedBox(height: 20),
@@ -75,11 +75,11 @@ class _LoginScreenState extends State<LoginScreen> {
                     hintText: "Password",
                     prefixIcon: Icon(
                       Icons.lock_outline,
-                      color: AppColors.greycolor,
+                      color: AppColors.greyColor,
                     ),
                     suffixIcon: Icon(
                       Icons.remove_red_eye,
-                      color: AppColors.greycolor,
+                      color: AppColors.greyColor,
                     ),
                   ),
                   SizedBox(height: 15),
@@ -101,7 +101,7 @@ class _LoginScreenState extends State<LoginScreen> {
                             style: TextStyles.caption2.copyWith(
                               fontWeight: FontWeight.w500,
                               fontSize: 13,
-                              color: AppColors.blackcolor,
+                              color: AppColors.blackColor,
                             ),
                           ),
                         ],
@@ -125,7 +125,9 @@ class _LoginScreenState extends State<LoginScreen> {
                   MainButton(
                     text: "Sign In",
                     onPressed: () {
-                      if (formKey.currentState!.validate()) {}
+                      if (formKey.currentState!.validate()) {
+                        pushTo(context, MainAppScreen());
+                      }
                     },
                   ),
                   SizedBox(height: 25),
@@ -135,7 +137,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       "or continue with",
                       style: TextStyles.caption1.copyWith(
                         fontWeight: FontWeight.w800,
-                        color: AppColors.greycolor,
+                        color: AppColors.greyColor,
                       ),
                     ),
                   ),
@@ -157,7 +159,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           TextSpan(
                             text: "Don't have an Account? ",
                             style: TextStyles.caption1.copyWith(
-                              color: AppColors.greycolor,
+                              color: AppColors.greyColor,
                             ),
                           ),
                           WidgetSpan(

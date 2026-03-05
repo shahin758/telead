@@ -41,7 +41,7 @@ class GenderBottomSheet extends StatelessWidget {
           height: 60,
           padding: const EdgeInsets.symmetric(horizontal: 15),
           decoration: BoxDecoration(
-            color: AppColors.whitecolor,
+            color: AppColors.whiteColor,
             borderRadius: BorderRadius.circular(15),
           ),
           child: Row(

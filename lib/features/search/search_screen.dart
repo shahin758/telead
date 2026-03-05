@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:telead/core/theme/text_style.dart';
-
+import 'package:telead/core/theme/text_styles.dart';
 import '../../core/functions/navigation.dart';
 import '../../core/theme/colors.dart';
 import '../../core/widgets/custom_text_form_field.dart';
@@ -67,7 +66,7 @@ class _SearchScreenState extends State<SearchScreen> {
                     pushTo(context, PopularCourses());
                     },
                     icon: Icon(Icons.search),
-                    color: AppColors.whitecolor,
+                    color: AppColors.whiteColor,
                   ),
                 ),
               ),
@@ -76,7 +75,7 @@ class _SearchScreenState extends State<SearchScreen> {
                   Text(
                     "Recents Search",
                     style: TextStyles.body.copyWith(
-                      color: AppColors.blackcolor,
+                      color: AppColors.blackColor,
                       fontWeight: FontWeight.w600,
                     ),
                   ),
@@ -105,7 +104,7 @@ class _SearchScreenState extends State<SearchScreen> {
                   Spacer(),
                   IconButton(
                     onPressed: () {},
-                    icon: Icon(Icons.close, color: AppColors.blackcolor),
+                    icon: Icon(Icons.close, color: AppColors.blackColor),
                   ),
                 ],
               ),
@@ -121,7 +120,7 @@ class _SearchScreenState extends State<SearchScreen> {
                   Spacer(),
                   IconButton(
                     onPressed: () {},
-                    icon: Icon(Icons.close, color: AppColors.blackcolor),
+                    icon: Icon(Icons.close, color: AppColors.blackColor),
                   ),
                 ],
               ),
@@ -137,7 +136,7 @@ class _SearchScreenState extends State<SearchScreen> {
                   Spacer(),
                   IconButton(
                     onPressed: () {},
-                    icon: Icon(Icons.close, color: AppColors.blackcolor),
+                    icon: Icon(Icons.close, color: AppColors.blackColor),
                   ),
                 ],
               ),
@@ -153,7 +152,7 @@ class _SearchScreenState extends State<SearchScreen> {
                   Spacer(),
                   IconButton(
                     onPressed: () {},
-                    icon: Icon(Icons.close, color: AppColors.blackcolor),
+                    icon: Icon(Icons.close, color: AppColors.blackColor),
                   ),
                 ],
               ),
@@ -169,7 +168,7 @@ class _SearchScreenState extends State<SearchScreen> {
                   Spacer(),
                   IconButton(
                     onPressed: () {},
-                    icon: Icon(Icons.close, color: AppColors.blackcolor),
+                    icon: Icon(Icons.close, color: AppColors.blackColor),
                   ),
                 ],
               ),

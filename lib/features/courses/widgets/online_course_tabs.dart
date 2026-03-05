@@ -22,7 +22,7 @@ class OnlineCourseTab extends StatelessWidget {
                 child: Text(
                   "Courses",
                   style: TextStyle(
-                    color: AppColors.whitecolor,
+                    color: AppColors.whiteColor,
                     fontWeight: FontWeight.w600,
                   ),
                 ),

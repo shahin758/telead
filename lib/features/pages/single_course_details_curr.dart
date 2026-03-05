@@ -11,17 +11,17 @@ class SingleCourseDetailsCurr extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.blackcolor,
+      backgroundColor: AppColors.blackColor,
       body: Stack(
         children: [
           Container(
             height: MediaQuery.of(context).size.height * 0.45,
             width: double.infinity,
-            color: AppColors.blackcolor,
+            color: AppColors.blackColor,
             child: Center(
               child: Icon(
                 Icons.play_circle_fill,
-                color: AppColors.greycolor,
+                color: AppColors.greyColor,
                 size: 80,
               ),
             ),
@@ -77,7 +77,7 @@ class SingleCourseDetailsCurr extends StatelessWidget {
               backgroundColor: AppColors.green,
               child: const Icon(
                 Icons.video_library_outlined,
-                color: AppColors.whitecolor,
+                color: AppColors.whiteColor,
               ),
             ),
           ),

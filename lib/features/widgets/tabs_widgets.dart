@@ -22,7 +22,7 @@ class TabsWidgets extends StatelessWidget {
                 child: Text(
                   "About",
                   style: TextStyles.caption1.copyWith(
-                    color: AppColors.blackcolor,
+                    color: AppColors.blackColor,
                     fontFamily: 'Jost',
                     fontWeight: FontWeight.w700,
                   ),
@@ -35,7 +35,7 @@ class TabsWidgets extends StatelessWidget {
               child: Text(
                 "Curriculum",
                 style: TextStyles.caption1.copyWith(
-                  color: AppColors.blackcolor,
+                  color: AppColors.blackColor,
                   fontFamily: 'Jost',
                   fontWeight: FontWeight.w700,
                 ),

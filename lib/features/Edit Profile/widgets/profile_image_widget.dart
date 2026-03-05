@@ -29,7 +29,7 @@ class ProfileImageWidget extends StatelessWidget {
           height: 35,
           width: 35,
           decoration: BoxDecoration(
-            color: AppColors.whitecolor,
+            color: AppColors.whiteColor,
             borderRadius: BorderRadius.circular(10),
             border: Border.all(
                   color: AppColors.green,

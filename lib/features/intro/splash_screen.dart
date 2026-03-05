@@ -1,5 +1,5 @@
+// ignore_for_file: use_build_context_synchronously
 import 'package:flutter/material.dart';
-
 import '../../core/constants/app_images.dart';
 import '../../core/functions/navigation.dart';
 import '../../core/theme/colors.dart';

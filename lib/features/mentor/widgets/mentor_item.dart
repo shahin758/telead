@@ -41,7 +41,7 @@ class MentorItem extends StatelessWidget {
         subtitle: Text(
           mentor.specialty,
           style: TextStyle(
-            color: AppColors.greycolor,
+            color: AppColors.greyColor,
             fontSize: 14,
             fontWeight: FontWeight.w600,
           ),

@@ -41,7 +41,7 @@ class LessonsWidgets extends StatelessWidget {
               Text(
                 title,
                 style: TextStyles.caption1.copyWith(
-                  color: AppColors.blackcolor,
+                  color: AppColors.blackColor,
                   fontFamily: 'Jost',
                   fontWeight: FontWeight.w800,
                 ),
@@ -49,7 +49,7 @@ class LessonsWidgets extends StatelessWidget {
               Text(
                 time,
                 style: TextStyles.caption2.copyWith(
-                  color: AppColors.greycolor,
+                  color: AppColors.greyColor,
                   fontFamily: 'Mulish',
                   fontWeight: FontWeight.w700,
                 ),

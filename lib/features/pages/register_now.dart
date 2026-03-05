@@ -44,7 +44,7 @@ class RegisterNow extends StatelessWidget {
                     'Create an Account to Continue your allCourses',
                     style: TextStyles.caption2.copyWith(
                       fontWeight: FontWeight.w700,
-                      color: AppColors.greycolor,
+                      color: AppColors.greyColor,
                     ),
                   ),
                   SizedBox(height: 30),
@@ -71,7 +71,7 @@ class RegisterNow extends StatelessWidget {
                         child: Text(
                           'Agree to Terms & Conditions',
                           style: TextStyles.caption2.copyWith(
-                            color: AppColors.greycolor,
+                            color: AppColors.greyColor,
                           ),
                         ),
                       ),
@@ -90,7 +90,7 @@ class RegisterNow extends StatelessWidget {
                     child: Text(
                       'Or Continue With',
                       style: TextStyles.caption1.copyWith(
-                        color: AppColors.greycolor,
+                        color: AppColors.greyColor,
                         fontFamily: 'Mulish',
                         fontWeight: FontWeight.w800,
                       ),
@@ -103,7 +103,7 @@ class RegisterNow extends StatelessWidget {
                       Container(
                         padding: const EdgeInsets.all(12),
                         decoration: const BoxDecoration(
-                          color: AppColors.whitecolor,
+                          color: AppColors.whiteColor,
                           shape: BoxShape.circle,
                           boxShadow: [
                             BoxShadow(
@@ -125,7 +125,7 @@ class RegisterNow extends StatelessWidget {
                       Container(
                         padding: const EdgeInsets.all(12),
                         decoration: const BoxDecoration(
-                          color: AppColors.whitecolor,
+                          color: AppColors.whiteColor,
                           shape: BoxShape.circle,
                           boxShadow: [
                             BoxShadow(

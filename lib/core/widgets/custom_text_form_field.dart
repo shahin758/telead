@@ -31,7 +31,7 @@ class CustomTextFormField extends StatelessWidget {
        decoration: BoxDecoration(
               boxShadow: [
                 BoxShadow(
-                  color: AppColors.greycolor.withValues(alpha: (0.1)),
+                  color: AppColors.greyColor.withValues(alpha: (0.1)),
                   blurRadius: 12,
                   offset: Offset(0, 3),
                 ),

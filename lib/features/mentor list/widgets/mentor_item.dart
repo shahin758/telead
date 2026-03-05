@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_print, deprecated_member_use
+
 import 'package:flutter/material.dart';
 import 'package:telead/core/theme/colors.dart';
 
@@ -56,7 +58,7 @@ class MentorItem extends StatelessWidget {
                       style: TextStyle(
                         fontSize: 14,
                         fontWeight: FontWeight.w600,
-                        color: AppColors.greycolor,
+                        color: AppColors.greyColor,
                       ),
                     ),
                   ],

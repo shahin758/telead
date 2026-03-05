@@ -17,7 +17,7 @@ final String text2;
           TextSpan(
             text: text2,
             style: TextStyles.caption2.copyWith(
-              color: AppColors.greycolor,
+              color: AppColors.greyColor,
               fontFamily: 'Mulish',
               fontWeight: FontWeight.w700,
             ),

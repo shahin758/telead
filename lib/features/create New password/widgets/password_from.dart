@@ -16,7 +16,7 @@ InputDecoration buildPasswordFormDecoration({
       onPressed: onTap,
     ),
     filled: true,
-    fillColor: AppColors.whitecolor,
+    fillColor: AppColors.whiteColor,
     contentPadding: const EdgeInsets.symmetric(vertical: 18, horizontal: 16),
     border: OutlineInputBorder(
       borderRadius: BorderRadius.circular(14),

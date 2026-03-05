@@ -18,7 +18,7 @@ class ProfileItemList extends StatelessWidget {
           margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 50),
           padding: const EdgeInsets.only(top: 60, bottom: 20),
           decoration: BoxDecoration(
-            color: AppColors.whitecolor,
+            color: AppColors.whiteColor,
             borderRadius: BorderRadius.circular(15),
           ),
           child: Column(
@@ -38,7 +38,7 @@ class ProfileItemList extends StatelessWidget {
                     profile.email,
                     style: const TextStyle(
                       fontSize: 14,
-                      color: AppColors.greycolor,
+                      color: AppColors.greyColor,
                     ),
                   ),
                 ],

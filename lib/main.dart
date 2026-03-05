@@ -1,7 +1,5 @@
-import 'dart:io';
-
 import 'package:flutter/material.dart';
-import 'package:telead/features/mentor%20list/page/mentor_list_screen.dart';
+import 'package:telead/features/intro/splash_screen.dart';
 
 import 'core/theme/themes.dart';
 
@@ -16,17 +14,16 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: AppThemes.lighttheme,
-
       debugShowCheckedModeBanner: false,
       builder: (context, child) {
         return SafeArea(
           top: false,
-          bottom: Platform.isAndroid,
+          //  bottom: Platform.isAndroid,
           child: child ?? SizedBox(),
         );
       },
 
-      home: MentorsScreen(),
+      home: SplashScreen(),
     );
   }
 }

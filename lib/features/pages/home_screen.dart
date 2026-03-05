@@ -55,7 +55,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         Text(
                           'What Would you like to learn Today?\n Search Below.',
                           style: TextStyles.caption2.copyWith(
-                            color: AppColors.greycolor,
+                            color: AppColors.greyColor,
                           ),
                         ),
                       ],

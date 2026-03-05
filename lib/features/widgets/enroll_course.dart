@@ -32,7 +32,7 @@ class EnrollCourse extends StatelessWidget {
             Text(
               "Enroll Course - \$55",
               style: TextStyles.body.copyWith(
-                color: AppColors.whitecolor,
+                color: AppColors.whiteColor,
                 fontWeight: FontWeight.w600,
               ),
             ),
@@ -41,7 +41,7 @@ class EnrollCourse extends StatelessWidget {
               margin:  EdgeInsets.only(right: 8),
               padding:  EdgeInsets.all(10),
               decoration:  BoxDecoration(
-                color: AppColors.whitecolor,
+                color: AppColors.whiteColor,
                 shape: BoxShape.circle,
               ),
               child: Icon(Icons.arrow_forward, color: AppColors.offer),

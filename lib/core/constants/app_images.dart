@@ -1,3 +1,5 @@
+// ignore_for_file: constant_identifier_names
+
 abstract class AppImages {
   static const String logo = 'assets/images/logo.png';
   static const String oval = 'assets/images/oval.png';
@@ -42,8 +44,52 @@ abstract class AppImages {
   static const String details = 'assets/images/details.png';
   static const String black = 'assets/images/black.png';
   static const String searche = "assets/images/search.png";
-
-
+  static const String done = 'assets/images/done.svg';
+  static const String uiUx = "assets/images/ui_ux.jpg";
+  static const String graphicDesign = "assets/images/graphic_design.jpg";
+  static const String digitalMarketing = "assets/images/digital_marketing.webp";
+    static const String web1 = "assets/images/web.webp";
+  static const String search1 = 'assets/icons/search.svg';
+  static const String rate = "assets/images/Star.svg";
+  static const String range = "assets/images/range.svg";
+  static const String call = "assets/images/call.svg";
+  static const String incoming = "assets/images/incoming.svg";
+  static const String outgoing = "assets/images/outgoing.svg";
+  static const String missed = "assets/images/missed.svg";
+  static const String massege = "assets/images/Circle (1).svg";
+  static const String massege2 = "assets/images/Circle (2).svg";
+  static const String massege3 = "assets/images/massege.svg";
+  static const String serach2 = "assets/images/Fill 1 (3).svg";
+  static const String transactionList = "assets/images/transaction_list.png";
+  static const String vedio = "assets/images/Video.svg";
+  static const String lec = "assets/images/class.svg";
+  static const String hrs = "assets/images/hrs.svg";
+  static const String profile = "assets/images/profile.png";
+  static const String profile2 = "assets/images/profile-2.png";
+  static const String profile3 = "assets/images/profile-3.png";
+  static const String chat = "assets/images/chat.svg";
+  static const String reviewRate = "assets/images/STAR (1).svg";
+  static const String like = "assets/images/like.svg";
+  static const String lessons = "assets/icons/lesson.svg";
+  static const String access = "assets/icons/access.svg";
+  static const String level = "assets/icons/level.svg";
+  static const String audio = "assets/icons/audio.svg";
+  static const String lifeTime = "assets/icons/life-time.svg";
+  static const String quiz = "assets/icons/quiz.svg";
+  static const String certificate = "assets/icons/certificate.svg";
+  static const String arrow = "assets/icons/arrow (2).svg";
+  static const String one = "assets/icons/one.svg";
+  static const String two = "assets/icons/two.svg";
+  static const String play = "assets/icons/play.svg";
+  static const String saved = "assets/icons/saved.svg";
+  static const String unSaved = "assets/icons/un_saved.svg";
+  static const String unLike = "assets/icons/empty_like.svg";
+  static const String home = "assets/icons/home.svg";
+  static const String courses = "assets/icons/courses.svg";
+  static const String inbox = "assets/icons/inbox.svg";
+  static const String transaction = "assets/icons/transaction.svg";
+  static const String account = "assets/icons/profile.svg";
+  
   static const String Carmen = "assets/images/Carmen.png";
   static const String Donald = "assets/images/Donald.png";
   static const String Elvira = "assets/images/Elvira.png";
@@ -64,7 +110,7 @@ abstract class AppImages {
   static const String TermsConditions = "assets/icons/termsconditions.png";
   static const String Notifications = "assets/icons/notificationss.png";
 
-  static const String arrow = "assets/icons/arrow.png";
+  static const String arrow1 = "assets/icons/arrow.png";
   static const String birthday = "assets/icons/birth day.png";
   static const String email = "assets/icons/email.png";
 
@@ -73,16 +119,6 @@ abstract class AppImages {
   static const String Marie = "assets/images/Marie.png";
   static const String Gregory = "assets/images/Gregory.png";
   static const String Sandra = "assets/images/Sandra.png";
-
-
-
-
-
-
-
-  
-
-
 
 
 }
