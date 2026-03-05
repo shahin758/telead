@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:telead/features/intro/splash_screen.dart';
-import 'package:telead/features/single_course_details/presentation/view/single_course_details.dart';
 import 'core/theme/themes.dart';
 
 void main() {
