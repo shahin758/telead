@@ -13,9 +13,9 @@ class CreateNewPasswordScreen extends StatefulWidget {
       _CreateNewPasswordScreenState();
 }
 
-class _CreateNewPasswordScreenState
-    extends State<CreateNewPasswordScreen> {
+class _CreateNewPasswordScreenState extends State<CreateNewPasswordScreen> {
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
+
   final TextEditingController _passwordController = TextEditingController();
   final TextEditingController _confirmController = TextEditingController();
 
@@ -29,27 +29,21 @@ class _CreateNewPasswordScreenState
       child: Scaffold(
         resizeToAvoidBottomInset: true,
         backgroundColor: AppColors.backgroundcolor,
+
         appBar: AppBar(
           backgroundColor: AppColors.backgroundcolor,
           elevation: 0,
           leading: const BackButton(color: AppColors.back),
-          title: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 16),
-            child: Row(
-              mainAxisAlignment:MainAxisAlignment.spaceBetween,
-              children: [
-                const Text(
-                  "Create New Password",
-                  style: TextStyle(
-                    color: AppColors.back,
-                    fontSize: 21,
-                    fontWeight: FontWeight.w600,
-                  ),
-                ),
-              ],
+          title: const Text(
+            "Create New Password",
+            style: TextStyle(
+              color: AppColors.back,
+              fontSize: 21,
+              fontWeight: FontWeight.w600,
             ),
           ),
         ),
+
         body: SafeArea(
           child: SingleChildScrollView(
             padding: const EdgeInsets.symmetric(horizontal: 16),
@@ -63,7 +57,9 @@ class _CreateNewPasswordScreenState
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
+
                     const SizedBox(height: 100),
+
                     const Text(
                       "Create Your New Password",
                       style: TextStyle(
@@ -71,45 +67,49 @@ class _CreateNewPasswordScreenState
                         fontWeight: FontWeight.w600,
                       ),
                     ),
+
                     const SizedBox(height: 30),
+
                     PasswordFields(
-                      formKey: _formKey, 
+                      formKey: _formKey,
                       passwordController: _passwordController,
                       confirmController: _confirmController,
                       obscurePassword: _obscurePassword,
                       obscureConfirm: _obscureConfirm,
+
                       onPasswordToggle: () {
                         setState(() {
                           _obscurePassword = !_obscurePassword;
                         });
                       },
+
                       onConfirmToggle: () {
                         setState(() {
                           _obscureConfirm = !_obscureConfirm;
                         });
                       },
                     ),
+
                     const Spacer(),
+
+                    Center(
+                      child: Padding(
+                        padding: const EdgeInsets.only(bottom: 60),
+                        child: MainButton(
+                          text: "Continue",
+                          onPressed: () {
+                            if (_formKey.currentState!.validate()) {
+                              pushTo(context, const ProfileScreen());
+                            }
+                          },
+                        ),
+                      ),
+                    ),
+
                   ],
                 ),
               ),
             ),
-          ),
-        ),
-        bottomNavigationBar: Padding(
-          padding: EdgeInsets.only(
-            left: 24,
-            right: 24,
-            bottom: 32 + MediaQuery.of(context).viewInsets.bottom,
-          ),
-          child: MainButton(
-            text: "Continue",
-            onPressed: () {
-              _formKey.currentState!.validate();
-              if (_formKey.currentState!.validate()) {
-                pushTo(context, ProfileScreen());
-              }
-            },
           ),
         ),
       ),

@@ -3,14 +3,18 @@ import 'package:telead/core/theme/colors.dart';
 
 class MainButton extends StatelessWidget {
   final VoidCallback? onPressed;
-
-  const MainButton({super.key, this.onPressed , required this.text});
   final String text;
+
+  const MainButton({
+    super.key,
+    this.onPressed,
+    required this.text,
+  });
 
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: double.infinity,
+      width: 350,
       height: 60,
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
@@ -23,18 +27,20 @@ class MainButton extends StatelessWidget {
         onPressed: onPressed,
         child: Row(
           children: [
-            const Spacer(),
+            const SizedBox(width: 48), 
 
-          Text(
-              text,
-              style: TextStyle(
-                fontSize: 22,
-                fontWeight: FontWeight.w600,
-                color: AppColors.backgroundcolor,
+            Expanded(
+              child: Center(
+                child: Text(
+                  text,
+                  style: const TextStyle(
+                    fontSize: 22,
+                    fontWeight: FontWeight.w600,
+                    color: AppColors.backgroundcolor,
+                  ),
+                ),
               ),
             ),
-
-            const Spacer(),
 
             Container(
               width: 48,

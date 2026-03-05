@@ -43,11 +43,6 @@ class PasswordFields extends StatelessWidget {
               if (value == null || value.isEmpty) return "Enter your password";
               if (value.length < 8) return "Minimum 8 characters";
 
-              final passwordRegex =
-                  RegExp(r'^(?=.*[A-Za-z])(?=.*\d).{8,}$');
-              if (!passwordRegex.hasMatch(value))
-                return "Must contain letters and numbers";
-
               return null;
             },
           ),

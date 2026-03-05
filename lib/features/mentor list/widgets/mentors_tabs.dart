@@ -16,7 +16,8 @@ class MentorsTabs extends StatelessWidget {
               pushTo(context, TopMentorsScreen());
             },
             child: Container(
-              height: 45,
+              width: 170,
+              height: 48,
               decoration: BoxDecoration(
                 color: const Color(0xffE9EEF6),
                 borderRadius: BorderRadius.circular(25),
@@ -38,7 +39,8 @@ class MentorsTabs extends StatelessWidget {
 
         Expanded(
           child: Container(
-            height: 45,
+            width: 170,
+            height: 48,
             decoration: BoxDecoration(
               color: const Color(0xff1E7F74),
               borderRadius: BorderRadius.circular(25),
