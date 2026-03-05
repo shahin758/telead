@@ -6,7 +6,7 @@ import 'package:telead/features/create%20New%20password/widgets/password_fields.
 import 'package:telead/features/verify/widgets/main_button.dart';
 
 class CreateNewPasswordScreen extends StatefulWidget {
-  const CreateNewPasswordScreen({Key? key}) : super(key: key);
+  const CreateNewPasswordScreen({super.key});
 
   @override
   State<CreateNewPasswordScreen> createState() =>

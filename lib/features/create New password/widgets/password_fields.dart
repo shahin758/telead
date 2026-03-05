@@ -14,7 +14,7 @@ class PasswordFields extends StatelessWidget {
   final VoidCallback onConfirmToggle;
 
   const PasswordFields({
-    Key? key,
+    super.key,
     required this.formKey,
     required this.passwordController,
     required this.confirmController,
@@ -22,7 +22,7 @@ class PasswordFields extends StatelessWidget {
     required this.obscureConfirm,
     required this.onPasswordToggle,
     required this.onConfirmToggle,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -56,10 +56,12 @@ class PasswordFields extends StatelessWidget {
               onTap: onConfirmToggle,
             ),
             validator: (value) {
-              if (value == null || value.isEmpty)
+              if (value == null || value.isEmpty) {
                 return "Confirm your password";
-              if (value != passwordController.text)
+              }
+              if (value != passwordController.text) {
                 return "Passwords do not match";
+              }
               return null;
             },
           ),
