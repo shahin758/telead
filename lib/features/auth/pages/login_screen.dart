@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:telead/core/widgets/bottom_navigation-bar.dart';
 import '../../../core/functions/navigation.dart';
 import 'forgot_password.dart';
 import '../../../core/constants/app_images.dart';
@@ -120,7 +121,9 @@ class _LoginScreenState extends State<LoginScreen> {
                   MainButton(
                     text: "Sign In",
                     onPressed: () {
-                      if (formKey.currentState!.validate()) {}
+                      if (formKey.currentState!.validate()) {
+                        pushTo(context, MainAppScreen());
+                      }
                     },
                   ),
                   SizedBox(height: 25),

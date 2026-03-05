@@ -8,4 +8,7 @@ abstract class AppColors {
   static const Color blackColor = Color(0xFF202244);
   static const Color whiteColor = Color(0xFFFFFFFF);
   static const Color hintTextColor = Color(0xFFA0A4AB);
+  static const Color bgTab = Color(0xFF167F71);
+  static const Color unselectBg = Color(0xFFE8F1FF);
+  static const Color containerTab = Color(0xFFE8F1FF);
 }

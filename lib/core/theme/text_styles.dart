@@ -13,7 +13,7 @@ abstract class TextStyles {
   );
   static const TextStyle subtitle = TextStyle(
     fontSize: 18,
-    fontWeight: FontWeight.w600,
+    fontWeight: FontWeight.w500,
   );
   static const TextStyle body = TextStyle(
     fontSize: 16,
@@ -27,4 +27,5 @@ abstract class TextStyles {
     fontSize: 12,
     color: AppColors.greyColor,
   );
+  
 }

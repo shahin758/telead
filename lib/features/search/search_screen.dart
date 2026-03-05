@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:telead/core/theme/colors.dart';
 import 'package:telead/core/theme/text_styles.dart';
-
 import '../../core/widgets/custom_text_form_field.dart';
 
 class SearchScreen extends StatefulWidget {
