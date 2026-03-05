@@ -1,11 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:telead/core/functions/navigation.dart';
 import 'package:telead/core/theme/colors.dart';
-import 'package:telead/features/courses/pages/courses_list.dart';
 
-class MentorsTabs extends StatelessWidget {
-  const MentorsTabs({super.key});
-  
+class OnlineCourseTab extends StatelessWidget {
+  const OnlineCourseTab({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -13,21 +10,19 @@ class MentorsTabs extends StatelessWidget {
       children: [
         Expanded(
           child: GestureDetector(
-            onTap: () {
-              pushTo(context, CoursesList());
-            },
+            onTap: () {},
             child: Container(
               width: 170,
               height: 48,
               decoration: BoxDecoration(
-                color: const Color(0xffE9EEF6),
+                color: AppColors.green,
                 borderRadius: BorderRadius.circular(25),
               ),
               child: const Center(
                 child: Text(
                   "Courses",
                   style: TextStyle(
-                    color: AppColors.back,
+                    color: AppColors.whitecolor,
                     fontWeight: FontWeight.w600,
                   ),
                 ),
@@ -43,14 +38,14 @@ class MentorsTabs extends StatelessWidget {
             width: 170,
             height: 48,
             decoration: BoxDecoration(
-              color: const Color(0xff1E7F74),
+              color: AppColors.box,
               borderRadius: BorderRadius.circular(25),
             ),
             child: const Center(
               child: Text(
                 "Mentors",
                 style: TextStyle(
-                  color: Colors.white,
+                  color: AppColors.back,
                   fontWeight: FontWeight.w600,
                 ),
               ),
