@@ -59,7 +59,7 @@ abstract class AppImages {
   static const String HelpCenter = "assets/icons/Help Center.png";
   static const String IntiveFriends = "assets/icons/Intive Friends.png";
   static const String Language = "assets/icons/language.png";
-  static const String Payment = "assets/icons/Payment.png";
+  static const String Payment = "assets/icons/paymentoption.png";
   static const String Security = "assets/icons/security.png";
   static const String TermsConditions = "assets/icons/termsconditions.png";
   static const String Notifications = "assets/icons/notificationss.png";
