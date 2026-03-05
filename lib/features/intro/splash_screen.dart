@@ -17,6 +17,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     Future.delayed(Duration(seconds: 10), () {
       pushReplacement(context, LoginScreen());
+     
     });
 
     super.initState();

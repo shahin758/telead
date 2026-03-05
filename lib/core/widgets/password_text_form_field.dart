@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-import '../functions/validation.dart';
 
 class PasswordTextFormField extends StatefulWidget {
-  const PasswordTextFormField({super.key, required this.hintText, this.prefixIcon});
-
+  const PasswordTextFormField({ super.key, required this.hintText, required this.prefixIcon, required this.suffixIcon, this.keyboardType,});
+   
   final String hintText;
-  final Widget? prefixIcon;
-
+  final Icon prefixIcon;
+final Icon suffixIcon;
+ final TextInputType? keyboardType;
 
   @override
   State<PasswordTextFormField> createState() => _PasswordTextFormFieldState();
@@ -15,32 +15,28 @@ class PasswordTextFormField extends StatefulWidget {
 
 class _PasswordTextFormFieldState extends State<PasswordTextFormField> {
   bool obscureText = true;
-
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      keyboardType:TextInputType.visiblePassword ,
+      onTapOutside:(event){
+        FocusManager.instance.primaryFocus?.unfocus();
+      } ,
       obscureText: obscureText,
       decoration: InputDecoration(
-        prefixIcon: widget.prefixIcon,
         hintText: widget.hintText,
-        // labelText: 'Email',
-        suffixIcon: IconButton(
-          onPressed: () {
-            setState(() {
-              obscureText = !obscureText;
-            });
-          },
-          icon: Icon(obscureText ? Icons.visibility_off : Icons.remove_red_eye),
-        ),
+        prefixIcon: widget.prefixIcon,
+        suffixIcon: IconButton(onPressed: (){
+          setState(() {
+            obscureText = !obscureText;
+          });
+        },
+         icon: obscureText
+         ? Icon(Icons.visibility_off)
+         :Icon(Icons.remove_red_eye))
+       
       ),
-      validator: (input) {
-        if (isPasswordValid(input!)) {
-          return 'Please enter your password';
-        } else if (input.length < 6) {
-          return 'Password must be at least 6 characters';
-        }
-        return null;
-      },
+     
     );
   }
 }

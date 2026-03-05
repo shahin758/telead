@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:telead/core/widgets/bottom_navigation-bar.dart';
 import '../../../core/functions/navigation.dart';
-import 'forgot_password.dart';
-import '../../../core/constants/app_images.dart';
 import '../../../core/functions/validation.dart';
 import '../../../core/theme/colors.dart';
-import '../../../core/theme/text_styles.dart';
 import '../../../core/widgets/custom_text_form_field.dart';
 import '../../../core/widgets/main_button.dart';
 import '../../../core/widgets/password_text_form_field.dart';
 import '../widgets/custom_login_icon.dart';
+import 'forgot_password.dart';
+import 'package:telead/core/theme/text_styles.dart';
+import 'package:telead/core/constants/app_images.dart';
+import 'package:telead/features/main/main_app_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -75,6 +75,10 @@ class _LoginScreenState extends State<LoginScreen> {
                     hintText: "Password",
                     prefixIcon: Icon(
                       Icons.lock_outline,
+                      color: AppColors.greyColor,
+                    ),
+                    suffixIcon: Icon(
+                      Icons.remove_red_eye,
                       color: AppColors.greyColor,
                     ),
                   ),

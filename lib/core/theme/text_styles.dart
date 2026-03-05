@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'colors.dart';
 
 abstract class TextStyles {
@@ -27,5 +26,4 @@ abstract class TextStyles {
     fontSize: 12,
     color: AppColors.greyColor,
   );
-  
 }

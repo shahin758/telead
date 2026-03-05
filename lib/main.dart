@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:telead/features/intro/splash_screen.dart';
+
 import 'core/theme/themes.dart';
 
 void main() {
@@ -21,6 +22,7 @@ class MainApp extends StatelessWidget {
           child: child ?? SizedBox(),
         );
       },
+
       home: SplashScreen(),
     );
   }

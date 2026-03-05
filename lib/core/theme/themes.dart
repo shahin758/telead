@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:telead/core/theme/text_style.dart';
 
 import '../constants/app_fonts.dart';
 import 'colors.dart';
-import 'text_styles.dart';
 
 abstract class AppThemes {
   static ThemeData get lighttheme => ThemeData(
@@ -46,6 +46,7 @@ abstract class AppThemes {
       ),
     ),
     inputDecorationTheme: InputDecorationTheme(
+      
       hintStyle: TextStyles.caption1,
       fillColor: AppColors.whiteColor,
       filled: true,
