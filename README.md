@@ -1,18 +1,18 @@
- 🎓 TELEAD E-LEARNING APP
+## 🎓 TELEAD E-LEARNING APP:
 "A modular, high-performance e-learning ecosystem built with Flutter, designed to deliver a seamless, intuitive learning experience. This application bridges the gap between students and mentors through a robust feature-first architecture, ensuring high maintainability and rapid scalability."
 
 
-## 🚀 Key Features
+## 🚀 Key Features:
 - Personalized Learning Paths: Curated course selections tailored to individual user goals and skill levels.
 - Direct Mentorship Integration: Facilitating real-time communication between learners and industry experts via a dedicated Inbox and Mentor module.
 - Progress Persistence: Comprehensive tracking of "Ongoing" vs. "Completed" courses to keep users motivated and on track.
 - Secure Authentication Flow: A streamlined onboarding experience featuring secure password recovery and multi-step verification.
 - Optimized UI/UX: A component-driven design system using custom-built widgets for a consistent look and feel.
 
-## 🏗️ Technical Architecture
+## 🏗️ Technical Architecture:
 "The project follows a Feature-First folder structure, promoting a clean separation of concerns. By isolating the data, domain, and presentation layers within each feature, the codebase remains decoupled, testable, and easy to navigate as the application scales."
 
-## 🛠️ Tech Stack
+## 🛠️ Tech Stack:
 - Framework: Flutter (Latest Stable)
 - Language: Dart
 - Architecture: Feature-First / Clean Architecture
