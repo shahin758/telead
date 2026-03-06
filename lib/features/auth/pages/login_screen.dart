@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:telead/core/widgets/bottom_navigation-bar.dart';
-import 'package:telead/features/pages/register_now.dart';
+import 'package:telead/features/auth/pages/register_now.dart';
+import 'package:telead/features/widgets/main_button.dart';
 import '../../../core/functions/navigation.dart';
 import '../../../core/functions/validation.dart';
 import '../../../core/theme/colors.dart';

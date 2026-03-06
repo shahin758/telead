@@ -4,6 +4,7 @@ import 'package:telead/core/constants/app_images.dart';
 import 'package:telead/core/theme/colors.dart';
 import 'package:telead/core/theme/text_styles.dart';
 import 'package:telead/features/courses_complete/data/model/courses_card_model.dart';
+import 'package:telead/features/courses_complete/data/model/courses_card_model.dart';
 
 class CoursesCardList extends StatelessWidget {
   const CoursesCardList({super.key});
@@ -106,21 +107,39 @@ class CoursesCardList extends StatelessWidget {
                               ),
                             ],
                           ),
-                          SizedBox(width: 20),
+                          SizedBox(width: 20, height: 10),
 
-                          Row(
-                            children: [
-                              SvgPicture.asset(AppImages.range),
-                              SizedBox(width: 10),
-                              Text(
-                                courses[index].completelec ?? "93/125",
-                                style: TextStyles.caption2.copyWith(
-                                  color: AppColors.blackColor,
-                                  fontWeight: FontWeight.w600,
+                          index == 1 || index == 2 || index == 3
+                              ? Row(
+                                mainAxisAlignment: MainAxisAlignment.end,
+                                children: [
+                                  Text(
+                                      
+                                      "VIEW CERTIFICATE",
+                                      style: TextStyle(
+                                        decoration: TextDecoration.underline,
+                                        decorationColor: AppColors.bgTab,
+                                        decorationThickness: 1,
+                                        color: AppColors.bgTab,
+                                        fontWeight: FontWeight.w600,
+                                        fontSize: 12,
+                                      ),
+                                    ),
+                                ],
+                              )
+                              : Row(
+                                  children: [
+                                    SvgPicture.asset(AppImages.range),
+                                    SizedBox(width: 8),
+                                    Text(
+                                      courses[index].completelec ?? "93/125",
+                                      style: TextStyles.caption2.copyWith(
+                                        color: AppColors.blackColor,
+                                        fontWeight: FontWeight.w600,
+                                      ),
+                                    ),
+                                  ],
                                 ),
-                              ),
-                            ],
-                          ),
                         ],
                       ),
                     ),

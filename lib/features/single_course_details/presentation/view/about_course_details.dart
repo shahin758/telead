@@ -2,10 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:telead/core/theme/colors.dart';
 import 'package:telead/core/theme/text_styles.dart';
 
-class AboutCourseDetails extends StatelessWidget {
+class AboutCourseDetails extends StatefulWidget {
   const AboutCourseDetails({super.key, required this.category});
   final String category;
 
+  @override
+  State<AboutCourseDetails> createState() => _AboutCourseDetailsState();
+}
+
+class _AboutCourseDetailsState extends State<AboutCourseDetails> {
+  bool isReadMore = true;
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
@@ -21,29 +27,38 @@ class AboutCourseDetails extends StatelessWidget {
             ),
           ),
           SizedBox(height: 20),
-          Text.rich(
-            TextSpan(
-              children: [
-                TextSpan(
-                  text:
-                      "Graphic Design n a popular profession l Cur tantas regiones barbarorum pedibus obiit, maria transmi Et ne nimium beatus est; Addidisti ad extremum etiam ",
-                  style: TextStyles.caption2.copyWith(
-                    color: AppColors.hintTextColor,
-                    fontWeight: FontWeight.w600,
-                    fontSize: 12,
-                  ),
-                ),
-                TextSpan(
-                  text: "Read More",
-                  style: TextStyles.caption2.copyWith(
-                    color: AppColors.primaryColor,
-                    fontWeight: FontWeight.w600,
-                    fontSize: 12,
-                  ),
-                ),
-              ],
-            ),
-          ),
+       Wrap(
+  children: [
+    Text(
+      maxLines: isReadMore ? 3 : null,
+      overflow: isReadMore ? TextOverflow.ellipsis : null,
+      "Graphic Design n a popular profession l Cur tantas regiones barbarorum maria transmi Et ne nimium beatus est pedibus obiit, maria transmi Et ne nimium beatus est; Addidisti ad extremum etiam ",
+      style: TextStyles.caption2.copyWith(
+        color: AppColors.hintTextColor,
+        fontWeight: FontWeight.w600,
+        fontSize: 12,
+      ),
+    ),
+    GestureDetector(
+      onTap: () {
+        setState(() {
+          isReadMore = !isReadMore;
+        });
+      },
+      child: Text(
+        isReadMore ? "Read More" : "Read Less",
+        style: TextStyle(
+          decoration: TextDecoration.underline,
+          decorationColor: AppColors.primaryColor,
+          decorationThickness: 1,
+          color: AppColors.primaryColor,
+          fontWeight: FontWeight.w600,
+          fontSize: 12,
+        ),
+      ),
+    ),
+  ],
+),
         ],
       ),
     );

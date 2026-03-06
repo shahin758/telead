@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import '../../core/theme/colors.dart';
-import '../../core/theme/text_style.dart';
+import '../../../core/theme/colors.dart';
+import '../../../core/theme/text_style.dart';
 
 class HeaderInfo extends StatelessWidget {
   const HeaderInfo({

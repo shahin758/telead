@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:telead/core/functions/navigation.dart';
 import 'package:telead/core/theme/colors.dart';
-import 'package:telead/features/Edit%20Profile/widgets/custom_text_field.dart';
-import 'package:telead/features/Edit%20Profile/widgets/gender_bottom_sheet.dart';
-import 'package:telead/features/Edit%20Profile/widgets/phone_field_widget.dart';
-import 'package:telead/features/Edit%20Profile/widgets/product_edit_profile.dart';
-import 'package:telead/features/Edit%20Profile/widgets/profile_image_widget.dart';
-import 'package:telead/features/mentor%20list/page/mentor_list_screen.dart';
-import 'package:telead/features/verify/widgets/main_button.dart';
+import 'package:telead/core/widgets/custom_text_field.dart';
+import 'package:telead/core/widgets/main_button.dart';
+import 'package:telead/features/edit_profile/widgets/gender_bottom_sheet.dart';
+import 'package:telead/features/edit_profile/widgets/phone_field_widget.dart';
+import 'package:telead/features/edit_profile/widgets/product_edit_profile.dart';
+import 'package:telead/features/edit_profile/widgets/profile_image_widget.dart';
+import 'package:telead/features/mentor%20list/pages/mentor_list_screen.dart';
+import 'package:telead/features/widgets/main_buttonn.dart';
 
 class EditProfileScreen extends StatefulWidget {
   const EditProfileScreen({super.key});

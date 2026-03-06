@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:telead/core/constants/app_images.dart';
-import 'package:telead/features/Edit%20Profile/page/edit_profile_screen.dart';
-import 'package:telead/features/create%20New%20password/page/createPassword_screen.dart';
+
+import 'package:telead/features/auth/pages/createPassword_screen.dart';
+import 'package:telead/features/edit_profile/page/edit_profile_screen.dart';
 
 class ProfileModel {
   final String name;

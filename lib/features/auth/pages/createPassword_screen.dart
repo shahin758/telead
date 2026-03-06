@@ -3,9 +3,10 @@
 import 'package:flutter/material.dart';
 import 'package:telead/core/functions/navigation.dart';
 import 'package:telead/core/theme/colors.dart';
-import 'package:telead/features/create%20New%20password/widgets/password_fields.dart';
-import 'package:telead/features/pages/home_screen.dart';
-import 'package:telead/features/verify/widgets/main_button.dart';
+import 'package:telead/core/widgets/main_button.dart';
+import 'package:telead/features/auth/widgets/password_fields.dart';
+import 'package:telead/features/home_screen/pages/home_screen.dart';
+
 
 class CreateNewPasswordScreen extends StatefulWidget {
   const CreateNewPasswordScreen({super.key});

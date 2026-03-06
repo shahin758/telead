@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:telead/core/theme/colors.dart';
 
-class MainButton extends StatelessWidget {
+class MainButtonn extends StatelessWidget {
   final VoidCallback? onPressed;
   final String text;
 
-  const MainButton({
+  const MainButtonn({
     super.key,
     this.onPressed,
     required this.text,
+    // double ?spacing,
   });
 
   @override
@@ -27,7 +28,7 @@ class MainButton extends StatelessWidget {
         onPressed: onPressed,
         child: Row(
           children: [
-            const SizedBox(width: 48), 
+            const SizedBox(width: 48),
 
             Expanded(
               child: Center(

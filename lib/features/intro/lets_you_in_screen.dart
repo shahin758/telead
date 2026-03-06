@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:telead/features/widgets/main_buttonn.dart';
 import '../../core/constants/app_images.dart';
 import '../../core/functions/navigation.dart';
 import '../../core/theme/colors.dart';
 import '../../core/theme/text_style.dart';
 import '../../core/widgets/main_button.dart';
-import '../pages/register_now.dart';
-import '../widgets/textspan.dart';
+import '../auth/pages/register_now.dart';
+import '../auth/widgets/textspan.dart';
 
 class LetsYouInScreen extends StatelessWidget {
   const LetsYouInScreen({super.key});

@@ -8,7 +8,7 @@ import 'package:telead/core/theme/text_styles.dart';
 import 'package:telead/features/Profile/page/profile_screen.dart';
 import 'package:telead/features/courses_complete/presentation/view/courses_view.dart';
 import 'package:telead/features/inbox/presentation/view/inbox_screen.dart';
-import 'package:telead/features/pages/home_screen.dart';
+import 'package:telead/features/home_screen/pages/home_screen.dart';
 import 'package:telead/features/transaction/presentation/view/transaction_screen.dart';
 
 class MainAppScreen extends StatefulWidget {

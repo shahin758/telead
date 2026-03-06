@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:telead/core/functions/navigation.dart';
 import 'package:telead/core/theme/colors.dart';
-import 'package:telead/features/mentor%20list/page/mentor_list_screen.dart';
+import 'package:telead/features/mentor%20list/pages/mentor_list_screen.dart';
 
 class OnlineCourseTab extends StatelessWidget {
   const OnlineCourseTab({super.key});

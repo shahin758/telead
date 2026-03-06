@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:telead/core/functions/navigation.dart';
 import 'package:telead/features/courses/pages/courses_list.dart';
-import '../../core/constants/app_images.dart';
-import '../../core/theme/text_style.dart';
-import '../../core/widgets/custome_text_form_field.dart';
+import '../../../core/constants/app_images.dart';
+import '../../../core/theme/text_style.dart';
+import '../../../core/widgets/custome_text_form_field.dart';
 
 class CategoryScreen extends StatelessWidget {
   const CategoryScreen({super.key});

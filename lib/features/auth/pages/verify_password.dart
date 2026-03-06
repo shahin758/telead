@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:telead/core/functions/navigation.dart';
 import 'package:telead/core/theme/colors.dart';
-import 'package:telead/features/create%20New%20password/page/createPassword_screen.dart';
-import 'package:telead/features/verify/widgets/main_button.dart';
-import 'package:telead/features/verify/widgets/otp_field.dart';
-import 'package:telead/features/verify/widgets/verify_time.dart';
+import 'package:telead/core/widgets/main_button.dart';
+import 'package:telead/features/auth/pages/createPassword_screen.dart';
+import 'package:telead/features/auth/widgets/verify_time.dart';
+
+
+import 'package:telead/features/widgets/otp_field.dart';
+
+
 
 class VerifyForgotPasswordScreen extends StatefulWidget {
   const VerifyForgotPasswordScreen({super.key});

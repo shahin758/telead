@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:telead/features/create%20New%20password/widgets/password_from.dart';
+import 'package:telead/features/auth/widgets/password_from.dart';
 
 const String kPasswordLabel = "Password";
 const String kConfirmPasswordLabel = "Confirm Password";
