@@ -16,6 +16,8 @@ Telead is a comprehensive e-learning solution designed to bridge the gap between
 <img width="370" height="830" alt="Screenshot_1772759133" src="https://github.com/user-attachments/assets/7e0b5021-9fd7-404c-85d0-c219b24e2e32" />
 <img width="370" height="830" alt="Screenshot_1772759173" src="https://github.com/user-attachments/assets/16c36cad-5dce-4582-9da1-ec77e3dbb211" />
 <img width="370" height="830" alt="Screenshot_1772759231" src="https://github.com/user-attachments/assets/fa7aaac8-5b5d-42a6-ab9b-c9370b2a4fdc" />
+<img width="370" height="830" alt="Screenshot_1772761027" src="https://github.com/user-attachments/assets/429c316d-0b31-4d42-9baa-89573e9e8fbc" />
+<img width="370" height="830" alt="Screenshot_1772761027" src="https://github.com/user-attachments/assets/da3b97c8-992a-4b0e-89a6-b6bdb5711226" />
 <img width="370" height="830" alt="Screenshot_1772759265" src="https://github.com/user-attachments/assets/64912582-f25e-4e30-abac-8a7a0ec8e06c" />
 <img width="370" height="830" alt="Screenshot_1772759294" src="https://github.com/user-attachments/assets/d8479aed-1a1b-4cc7-83a9-828d1fc27ed7" />
 <img width="370" height="830" alt="Screenshot_1772759374" src="https://github.com/user-attachments/assets/0b520ebe-0ac4-4f8f-acbf-5939cc42499d" />
