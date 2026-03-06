@@ -3,8 +3,8 @@
 import 'package:flutter/material.dart';
 import 'package:telead/core/functions/navigation.dart';
 import 'package:telead/core/theme/colors.dart';
-import 'package:telead/features/Profile/page/profile_screen.dart';
 import 'package:telead/features/create%20New%20password/widgets/password_fields.dart';
+import 'package:telead/features/pages/home_screen.dart';
 import 'package:telead/features/verify/widgets/main_button.dart';
 
 class CreateNewPasswordScreen extends StatefulWidget {
@@ -101,7 +101,7 @@ class _CreateNewPasswordScreenState extends State<CreateNewPasswordScreen> {
                           text: "Continue",
                           onPressed: () {
                             if (_formKey.currentState!.validate()) {
-                              pushTo(context, const ProfileScreen());
+                              pushTo(context, const HomeScreen());
                             }
                           },
                         ),

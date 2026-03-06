@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:gap/gap.dart';
 import 'package:telead/core/constants/app_images.dart';
 import 'package:telead/core/theme/colors.dart';
 import 'package:telead/core/theme/text_styles.dart';
@@ -33,7 +32,7 @@ class InboxCallsList extends StatelessWidget {
             mainAxisSize: MainAxisSize.min,
             children: [
               SvgPicture.asset(call[index].icon, width: 16, height: 16),
-              const Gap(6),
+              SizedBox(width: 6),
               Flexible(
                 child: Text(
                   call[index].statusCall,

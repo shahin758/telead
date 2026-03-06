@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:gap/gap.dart';
 import 'package:telead/core/constants/app_images.dart';
 import 'package:telead/core/theme/colors.dart';
 import 'package:telead/core/theme/text_styles.dart';
@@ -44,7 +43,7 @@ class CoursesCardList extends StatelessWidget {
                       },
                     ),
                   ),
-                  const Gap(10),
+                  SizedBox(height: 10),
                   Expanded(
                     child: Padding(
                       padding: const EdgeInsets.symmetric(
@@ -79,7 +78,8 @@ class CoursesCardList extends StatelessWidget {
                               fontWeight: FontWeight.w600,
                             ),
                           ),
-                          Gap(10),
+                          SizedBox(width: 10),
+
                           Row(
                             children: [
                               SvgPicture.asset(AppImages.rate),
@@ -106,11 +106,12 @@ class CoursesCardList extends StatelessWidget {
                               ),
                             ],
                           ),
-                          Gap(10),
+                          SizedBox(width: 20),
+
                           Row(
                             children: [
                               SvgPicture.asset(AppImages.range),
-                              Gap(10),
+                              SizedBox(width: 10),
                               Text(
                                 courses[index].completelec ?? "93/125",
                                 style: TextStyles.caption2.copyWith(

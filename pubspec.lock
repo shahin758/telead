@@ -123,7 +123,6 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
-<<<<<<< HEAD
   gap:
     dependency: "direct main"
     description:
@@ -132,7 +131,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.0.1"
-=======
   glob:
     dependency: transitive
     description:
@@ -157,7 +155,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.0.1"
->>>>>>> c6ed94efae98f2ceb8b6dd87add8a1d593c1639b
   http:
     dependency: transitive
     description:

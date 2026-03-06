@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:gap/gap.dart';
 import 'package:telead/core/theme/colors.dart';
 import 'package:telead/core/theme/text_styles.dart';
 
@@ -21,7 +20,7 @@ class AboutCourseDetails extends StatelessWidget {
               fontSize: 12,
             ),
           ),
-          Gap(13),
+          SizedBox(height: 20),
           Text.rich(
             TextSpan(
               children: [

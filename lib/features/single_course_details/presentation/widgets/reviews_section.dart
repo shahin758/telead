@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:gap/gap.dart';
 import 'package:telead/core/constants/app_images.dart';
 import 'package:telead/core/theme/colors.dart';
 import 'package:telead/core/theme/text_styles.dart';
@@ -43,7 +42,7 @@ class ReviewsSection extends StatelessWidget {
           subtitle: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-          Gap(6),
+              SizedBox(height: 6),
               Text(
                 reviews[index].title,
                 style: TextStyles.body.copyWith(
@@ -52,11 +51,11 @@ class ReviewsSection extends StatelessWidget {
                   fontWeight: FontWeight.w500,
                 ),
               ),
-              const Gap(10),
+              SizedBox(height: 10),
               Row(
                 children: [
                   SvgPicture.asset(AppImages.like),
-                  const Gap(6),
+                  SizedBox(width: 6),
                   Text(
                     "578",
                     style: TextStyles.caption2.copyWith(
@@ -64,7 +63,7 @@ class ReviewsSection extends StatelessWidget {
                       fontWeight: FontWeight.w700,
                     ),
                   ),
-                  const Gap(16),
+                  SizedBox(width: 16),
                   Text(
                     "2 Weeks Agos",
                     style: TextStyles.caption2.copyWith(

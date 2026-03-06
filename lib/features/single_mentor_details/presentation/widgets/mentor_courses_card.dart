@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:gap/gap.dart';
 import 'package:telead/core/constants/app_images.dart';
 import 'package:telead/core/theme/colors.dart';
 import 'package:telead/core/theme/text_styles.dart';
@@ -44,7 +43,7 @@ class MentorCoursesCard extends StatelessWidget {
                   },
                 ),
               ),
-              const Gap(12),
+              SizedBox(width: 12),
               Expanded(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -65,12 +64,10 @@ class MentorCoursesCard extends StatelessWidget {
                             overflow: TextOverflow.ellipsis,
                           ),
                         ),
-                        SvgPicture.asset(
-                          mentor[index].save
-                        ),
+                        SvgPicture.asset(mentor[index].save),
                       ],
                     ),
-                    const Gap(4),
+                    SizedBox(width: 4),
                     Text(
                       mentor[index].title,
                       style: TextStyles.caption2.copyWith(
@@ -80,28 +77,35 @@ class MentorCoursesCard extends StatelessWidget {
                       maxLines: 2,
                       overflow: TextOverflow.ellipsis,
                     ),
-                    const Gap(8),
+                    SizedBox(width: 8),
                     Row(
                       children: [
                         Text(
-                          mentor[index].discount,
-                          style: const TextStyle(fontSize: 12),
-                        ),
-                        const Gap(8),
-                        Text(
                           mentor[index].price,
                           style: const TextStyle(
+                            color: AppColors.primaryColor,
                             fontSize: 14,
-                            fontWeight: FontWeight.bold,
+                            fontWeight: FontWeight.w800,
+                          ),
+                        ),
+                        SizedBox(width: 10),
+                        Text(
+                          mentor[index].discount,
+                          style: TextStyle(
+                            fontWeight: FontWeight.w600,
+                            decoration: TextDecoration.lineThrough,
+                            fontSize: 15,
+                            color: AppColors.greyColor,
                           ),
                         ),
                       ],
                     ),
-                    const Gap(4),
+
+                    SizedBox(width: 4),
                     Row(
                       children: [
                         SvgPicture.asset(AppImages.rate, width: 14, height: 14),
-                        const Gap(4),
+                        SizedBox(width: 4),
                         Text(
                           mentor[index].rate,
                           style: const TextStyle(fontSize: 12),

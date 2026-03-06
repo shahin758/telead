@@ -1,7 +1,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:gap/gap.dart';
 import 'package:telead/core/constants/app_images.dart';
 import 'package:telead/core/theme/colors.dart';
 import 'package:telead/core/theme/text_styles.dart';
@@ -38,7 +37,7 @@ class CourseDetails extends StatelessWidget {
             ),
           ],
         ),
-        Gap(8),
+        SizedBox(width: 8),
         Text(
           "Design Principles: Organizing ..",
           style: TextStyles.body.copyWith(
@@ -47,11 +46,11 @@ class CourseDetails extends StatelessWidget {
             fontWeight: FontWeight.w800,
           ),
         ),
-        Gap(10),
+        SizedBox(width: 10),
         Row(
           children: [
             SvgPicture.asset(AppImages.lec),
-            Gap(6),
+            SizedBox(width: 6),
             Text(
               "21 class",
               style: TextStyles.caption2.copyWith(
@@ -59,7 +58,7 @@ class CourseDetails extends StatelessWidget {
                 fontWeight: FontWeight.w700
               ),
             ),
-            Gap(8),
+            SizedBox(width: 8),
             SizedBox(
               height: 20,
               child: VerticalDivider(
@@ -67,9 +66,9 @@ class CourseDetails extends StatelessWidget {
                 thickness: 2,
               ),
             ),
-            Gap(8),
+            SizedBox(width: 8),
             SvgPicture.asset(AppImages.hrs),
-            Gap(6),
+            SizedBox(width: 8),
             Text(
               "42 hours",
               style: TextStyles.caption2.copyWith(

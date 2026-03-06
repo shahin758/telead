@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:telead/core/theme/text_style.dart';
+import 'package:telead/features/verify/page/verify_password.dart';
 import '../../../core/functions/navigation.dart';
 import '../../../core/widgets/main_button.dart';
 import '../../search/search_screen.dart';
@@ -61,7 +62,7 @@ class SelectionScreenState extends State<SelectionScreen> {
             MainButton(
               text: "Continue",
               onPressed: () {
-                pushTo(context, SearchScreen());
+                pushTo(context, VerifyForgotPasswordScreen());
               },
             ),
             SizedBox(height: 100),

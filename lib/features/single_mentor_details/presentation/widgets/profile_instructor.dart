@@ -1,6 +1,5 @@
 
 import 'package:flutter/material.dart';
-import 'package:gap/gap.dart';
 import 'package:telead/core/constants/app_images.dart';
 import 'package:telead/core/theme/colors.dart';
 import 'package:telead/core/theme/text_styles.dart';
@@ -27,7 +26,7 @@ class ProfileInstructor extends StatelessWidget {
             fontWeight: FontWeight.w700,
           ),
         ),
-        Gap(4),
+        SizedBox(height: 4),
         Text(
           "Graphic Designer At Google",
           style: TextStyles.caption2.copyWith(

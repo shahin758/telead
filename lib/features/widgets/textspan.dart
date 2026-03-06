@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:telead/features/auth/pages/login_screen.dart';
 import '../../core/functions/navigation.dart';
 import '../../core/theme/colors.dart';
 import '../../core/theme/text_style.dart';
-import '../pages/register_now.dart';
 
 class Textspan extends StatelessWidget {
   const Textspan({super.key, required this.text, required this.text2});
-final String text;
-final String text2;
+  final String text;
+  final String text2;
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +26,7 @@ final String text2;
             alignment: PlaceholderAlignment.middle,
             child: TextButton(
               onPressed: () {
-                pushReplacement(context, RegisterNow());
+                pushReplacement(context, LoginScreen());
               },
               child: Text(
                 text,

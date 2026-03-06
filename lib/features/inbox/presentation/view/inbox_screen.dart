@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:gap/gap.dart';
 import 'package:telead/core/theme/text_styles.dart';
 import 'package:telead/features/inbox/presentation/widgets/inbox_tab_bar.dart';
 
@@ -30,7 +29,7 @@ class _InboxScreenState extends State<InboxScreen> {
       ),
       body: Column(
         children: [
-          const Gap(10),
+          SizedBox(height: 10),
           Expanded(
             child: const InboxTabBarCard(),
           ),

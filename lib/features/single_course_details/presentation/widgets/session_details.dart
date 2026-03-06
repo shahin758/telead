@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:gap/gap.dart';
 import 'package:telead/core/theme/colors.dart';
 import 'package:telead/core/theme/text_styles.dart';
 import 'package:telead/features/single_course_details/data/model/session_details_model.dart';
@@ -21,7 +20,8 @@ class SessionDetails extends StatelessWidget {
           return Row(
             children: [
               SvgPicture.asset(session[index].icon),
-              Gap(16),
+              SizedBox(width: 10),
+
               Text(
                 session[index].text,
                 style: TextStyles.body.copyWith(

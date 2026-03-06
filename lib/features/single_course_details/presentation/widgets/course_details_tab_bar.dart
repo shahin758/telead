@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:gap/gap.dart';
 import 'package:telead/core/theme/colors.dart';
 import 'package:telead/core/theme/text_styles.dart';
 import 'package:telead/features/single_course_details/presentation/view/about_course_details.dart';
@@ -43,7 +42,7 @@ class CourseDetailsTabBarCard extends StatelessWidget {
             ),
           ),
           
-          const Gap(20),
+          SizedBox(height: 20),
           SizedBox(
             height: 240,
             child: TabBarView(

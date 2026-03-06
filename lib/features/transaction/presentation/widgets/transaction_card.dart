@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:gap/gap.dart';
 import 'package:telead/core/theme/colors.dart';
 import 'package:telead/core/theme/text_styles.dart';
 import 'package:telead/features/transaction/data/model/transaction_model.dart';
@@ -40,7 +39,7 @@ class TransactionCardList extends StatelessWidget {
                     },
                   ),
                 ),
-                const Gap(10),
+                SizedBox(width: 20),
                 Expanded(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -57,7 +56,7 @@ class TransactionCardList extends StatelessWidget {
                           ),
                         ),
                       ),
-                      Gap(8),
+                      SizedBox(width: 8),
                       Text(
                         transaction[index].title,
                         style: TextStyles.caption2.copyWith(
@@ -65,7 +64,7 @@ class TransactionCardList extends StatelessWidget {
                           fontWeight: FontWeight.w500,
                         ),
                       ),
-                      Gap(8),
+                      SizedBox(height: 8),
                       Container(
                         margin: EdgeInsets.only(bottom: 8),
                         padding: EdgeInsets.symmetric(

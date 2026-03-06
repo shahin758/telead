@@ -1,9 +1,9 @@
 // ignore_for_file: use_build_context_synchronously
 import 'package:flutter/material.dart';
+import 'package:telead/features/intro/lets_you_in_screen.dart';
 import '../../core/constants/app_images.dart';
 import '../../core/functions/navigation.dart';
 import '../../core/theme/colors.dart';
-import '../auth/pages/login_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -16,7 +16,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     Future.delayed(Duration(seconds: 10), () {
-      pushReplacement(context, LoginScreen());
+      pushReplacement(context, LetsYouInScreen());
      
     });
 

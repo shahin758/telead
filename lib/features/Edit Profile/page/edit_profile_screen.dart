@@ -30,29 +30,29 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor:AppColors.backgroundcolor,
+      backgroundColor: AppColors.backgroundcolor,
       appBar: AppBar(
-          backgroundColor: AppColors.backgroundcolor,
-          elevation: 0,
-          titleSpacing: 0,
-          leading: const BackButton(color: AppColors.back),
-          title: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 16),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                const Text(
-                  "Edit Profile",
-                  style: TextStyle(
-                    color: AppColors.back,
-                    fontSize: 21,
-                    fontWeight: FontWeight.w600,
-                  ),
+        backgroundColor: AppColors.backgroundcolor,
+        elevation: 0,
+        titleSpacing: 0,
+        leading: const BackButton(color: AppColors.back),
+        title: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 16),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              const Text(
+                "Edit Profile",
+                style: TextStyle(
+                  color: AppColors.back,
+                  fontSize: 21,
+                  fontWeight: FontWeight.w600,
                 ),
-              ],
-            ),
+              ),
+            ],
           ),
         ),
+      ),
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 20),
@@ -66,7 +66,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                 const SizedBox(height: 30),
 
                 CustomTextField(
-                  hint: "Full Name" ,
+                  hint: "Full Name",
                   controller: fullNameController,
                 ),
 
@@ -127,24 +127,20 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                   },
                 ),
 
-                CustomTextField(
-                  hint: "Student",
-                ),
+                CustomTextField(hint: "Student"),
 
-                SizedBox(height: 20,),
+                SizedBox(height: 20),
                 MainButton(
                   text: "Update",
                   onPressed: () {
-                  pushTo(context, MentorsScreen());
-          
-  },
-),
+                    pushTo(context, MentorsScreen());
+                  },
+                ),
 
                 const SizedBox(height: 30),
               ],
             ),
           ),
-          
         ),
       ),
     );

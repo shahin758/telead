@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:telead/core/functions/navigation.dart';
+import 'package:telead/features/courses/pages/popular_courses.dart';
+import 'package:telead/features/mentor/page/topmentor_screen.dart';
+import 'package:telead/features/search/search_screen.dart';
 import '../../core/constants/app_images.dart';
 import '../../core/theme/colors.dart';
 import '../../core/theme/text_style.dart';
@@ -51,7 +55,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             fontWeight: FontWeight.w700,
                           ),
                         ),
-                        const SizedBox(height: 5),
+                        const SizedBox(width: 2),
                         Text(
                           'What Would you like to learn Today?\n Search Below.',
                           style: TextStyles.caption2.copyWith(
@@ -62,7 +66,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                     SizedBox(width: 80),
                     CircleAvatar(
-                      radius: 33,
+                      radius: 20,
                       backgroundColor: AppColors.backgroundcolor,
                       child: SvgPicture.asset(AppImages.notificationsss),
                     ),
@@ -73,6 +77,9 @@ class _HomeScreenState extends State<HomeScreen> {
                   children: [
                     Expanded(
                       child: CustomeTextFormField(
+                        onTap: () {
+                          pushTo(context, SearchScreen());
+                        },
                         hintText: "Search for..",
                         prefixIcon: Icon(Icons.search),
                         suffixIcon: Padding(
@@ -144,10 +151,20 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 ),
                 SizedBox(height: 2),
-                ListTilePopularCourses(text: 'Popular Courses'),
+                ListTilePopularCourses(
+                  text: 'Popular Courses',
+                  onPressed: () {
+                    pushTo(context, PopularCourses());
+                  },
+                ),
                 PopularCourses1(),
                 SizedBox(height: 25),
-                ListTilePopularCourses(text: 'Top Mentors'),
+                ListTilePopularCourses(
+                  text: 'Top Mentors',
+                  onPressed: () {
+                    pushTo(context, TopMentorsScreen());
+                  },
+                ),
                 TopMentorsList(mentors: mentors),
               ],
             ),

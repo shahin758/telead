@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:telead/core/functions/navigation.dart';
 import 'package:telead/core/theme/colors.dart';
+import 'package:telead/features/single_mentor_details/presentation/view/single_mentor_details.dart';
 import 'mentor_model.dart';
 
 class MentorItem extends StatelessWidget {
@@ -10,26 +12,27 @@ class MentorItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 16), 
+      padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
       child: ListTile(
         contentPadding: EdgeInsets.zero,
         leading: mentor.image.isEmpty
-    ? CircleAvatar(
-        backgroundColor: Colors.grey[800],
-        radius: 28,
-        child: Text(
-          mentor.name[0],
-          style: TextStyle(
-              color: AppColors.backgroundcolor,
-              fontWeight: FontWeight.w600,
-              fontSize: 18),
-        ),
-      )
-    : CircleAvatar(
-        radius: 40, 
-        backgroundImage: AssetImage(mentor.image), 
-        backgroundColor: Colors.transparent,
-      ),
+            ? CircleAvatar(
+                backgroundColor: Colors.grey[800],
+                radius: 28,
+                child: Text(
+                  mentor.name[0],
+                  style: TextStyle(
+                    color: AppColors.backgroundcolor,
+                    fontWeight: FontWeight.w600,
+                    fontSize: 18,
+                  ),
+                ),
+              )
+            : CircleAvatar(
+                radius: 40,
+                backgroundImage: AssetImage(mentor.image),
+                backgroundColor: Colors.transparent,
+              ),
         title: Text(
           mentor.name,
           style: TextStyle(
@@ -46,7 +49,9 @@ class MentorItem extends StatelessWidget {
             fontWeight: FontWeight.w600,
           ),
         ),
-        onTap: () {},
+        onTap: () {
+          pushTo(context, SingleMentorDetails()); 
+        },
       ),
     );
   }

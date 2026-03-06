@@ -5,8 +5,10 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:telead/core/constants/app_images.dart';
 import 'package:telead/core/theme/colors.dart';
 import 'package:telead/core/theme/text_styles.dart';
+import 'package:telead/features/Profile/page/profile_screen.dart';
 import 'package:telead/features/courses_complete/presentation/view/courses_view.dart';
 import 'package:telead/features/inbox/presentation/view/inbox_screen.dart';
+import 'package:telead/features/pages/home_screen.dart';
 import 'package:telead/features/transaction/presentation/view/transaction_screen.dart';
 
 class MainAppScreen extends StatefulWidget {
@@ -19,11 +21,11 @@ class MainAppScreen extends StatefulWidget {
 class _MainAppScreenState extends State<MainAppScreen> {
   int currentIndex = 0;
   List<Widget> screens = [
-    
+    HomeScreen(),
     MyCourses(),
     InboxScreen(),
     TransactionScreen(),
-    Center(child: Text('profile')),
+    ProfileScreen(),
   ];
   @override
   Widget build(BuildContext context) {

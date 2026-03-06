@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:telead/core/widgets/bottom_navigation-bar.dart';
+import 'package:telead/features/pages/register_now.dart';
 import '../../../core/functions/navigation.dart';
 import '../../../core/functions/validation.dart';
 import '../../../core/theme/colors.dart';
@@ -10,7 +12,6 @@ import '../widgets/custom_login_icon.dart';
 import 'forgot_password.dart';
 import 'package:telead/core/theme/text_styles.dart';
 import 'package:telead/core/constants/app_images.dart';
-import 'package:telead/features/main/main_app_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -165,7 +166,9 @@ class _LoginScreenState extends State<LoginScreen> {
                           WidgetSpan(
                             alignment: PlaceholderAlignment.middle,
                             child: TextButton(
-                              onPressed: () {},
+                              onPressed: () {
+                                pushTo(context, RegisterNow());
+                              },
                               child: Text(
                                 "SIGN UP",
                                 style: TextStyles.caption1.copyWith(

@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
-import '../../core/functions/navigation.dart';
 import '../../core/theme/colors.dart';
 import '../../core/theme/text_style.dart';
-import '../pages/single_course_details_curr.dart';
 
 class ListTilePopularCourses extends StatelessWidget {
-  const ListTilePopularCourses({super.key, required this.text});
+  const ListTilePopularCourses({super.key, required this.text, required this.onPressed});
   final String text;
+  final Function() onPressed;
 
   @override
   Widget build(BuildContext context) {
@@ -16,9 +15,7 @@ class ListTilePopularCourses extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         children: [
           TextButton(
-            onPressed: () {
-              pushTo(context, SingleCourseDetailsCurr());
-            },
+            onPressed: onPressed,
             child: Text(
               'SEE ALL',
               style: TextStyles.caption2.copyWith(

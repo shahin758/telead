@@ -1,7 +1,6 @@
 // ignore_for_file: prefer_const_literals_to_create_immutables
 import 'package:buttons_tabbar/buttons_tabbar.dart';
 import 'package:flutter/material.dart';
-import 'package:gap/gap.dart';
 import 'package:telead/core/theme/colors.dart';
 import 'package:telead/core/theme/text_styles.dart';
 import 'package:telead/features/courses_complete/presentation/widgets/course_completed.dart';
@@ -34,7 +33,7 @@ class _TabBarCardState extends State<TabBarCard> {
             length: 2,
             child: Column(
               children: [
-                const Gap(20),
+                SizedBox(height: 20),
                 Container(
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(30),
@@ -46,7 +45,7 @@ class _TabBarCardState extends State<TabBarCard> {
                     ),
                     unselectedDecoration: BoxDecoration(
                       color: AppColors.unselectBg,
-                      borderRadius: BorderRadius.circular(60), 
+                      borderRadius: BorderRadius.circular(60),
                     ),
                     contentPadding: const EdgeInsets.symmetric(
                       horizontal: 27,
@@ -68,7 +67,7 @@ class _TabBarCardState extends State<TabBarCard> {
                     ],
                   ),
                 ),
-                const Gap(20),
+                SizedBox(height: 20),
                 const Expanded(
                   child: TabBarView(
                     children: [

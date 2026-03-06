@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:gap/gap.dart';
 import 'package:telead/core/constants/app_images.dart';
+import 'package:telead/core/functions/navigation.dart';
 import 'package:telead/core/theme/colors.dart';
 import 'package:telead/core/theme/text_styles.dart';
 import 'package:telead/features/single_course_details/presentation/widgets/course_details.dart';
@@ -40,7 +40,7 @@ class SingleCourseDetails extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       const CourseDetails(),
-                      const Gap(20),
+                      SizedBox(height: 20),
                       const CourseDetailsTabBarCard(),
                     ],
                   ),
@@ -59,7 +59,7 @@ class SingleCourseDetails extends StatelessWidget {
                       ),
                       InfoListTile(),
                       Divider(thickness: 2, color: AppColors.containerTab),
-                      Gap(18),
+                      SizedBox(height: 20),
                       Text(
                         "What You’ll Get",
                         style: TextStyles.caption1.copyWith(
@@ -67,9 +67,9 @@ class SingleCourseDetails extends StatelessWidget {
                           fontSize: 18,
                         ),
                       ),
-                    
+
                       SessionDetails(),
-                      Gap(26),
+                      SizedBox(height: 20),
                       Row(
                         children: [
                           Text(
@@ -87,7 +87,7 @@ class SingleCourseDetails extends StatelessWidget {
                               ),
                             ),
                           ),
-                          Gap(4),
+                          SizedBox(height: 4),
                           Icon(
                             Icons.arrow_forward_ios,
                             color: AppColors.primaryColor,
@@ -96,7 +96,7 @@ class SingleCourseDetails extends StatelessWidget {
                         ],
                       ),
                       ReviewsSection(),
-                      Gap(10),
+                      SizedBox(height: 20),
                       CustomBtn(),
                     ],
                   ),
@@ -107,6 +107,20 @@ class SingleCourseDetails extends StatelessWidget {
               top: 170,
               right: 30,
               child: SvgPicture.asset(AppImages.vedio, height: 80),
+            ),
+            Positioned(
+              top: 20,
+              left: 10,
+              child: IconButton(
+                onPressed: () {
+                  pop(context);
+                },
+                icon: const Icon(
+                  Icons.arrow_back,
+                  color: AppColors.whiteColor,
+                  size: 30,
+                ),
+              ),
             ),
           ],
         ),

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:gap/gap.dart';
 import 'package:telead/core/theme/colors.dart';
 import 'package:telead/core/theme/text_styles.dart';
 import 'package:telead/features/single_course_details/presentation/widgets/custom_btn.dart';
@@ -26,15 +25,13 @@ class CurriculcumDetails extends StatelessWidget {
                         children: [
                           TextSpan(
                             text: "Section 01 - ",
-                            style: TextStyles.caption1.copyWith(
-                               fontSize: 12,
-                            ),
+                            style: TextStyles.caption1.copyWith(fontSize: 12),
                           ),
                           TextSpan(
                             text: "Introduction",
                             style: TextStyles.caption1.copyWith(
                               color: AppColors.primaryColor,
-                               fontSize: 12,
+                              fontSize: 12,
                             ),
                           ),
                         ],
@@ -45,14 +42,14 @@ class CurriculcumDetails extends StatelessWidget {
                       "25 Mins",
                       style: TextStyles.caption1.copyWith(
                         color: AppColors.primaryColor,
-                         fontSize: 12,
+                        fontSize: 12,
                       ),
                     ),
                   ],
                 ),
-                const Gap(16),
+                SizedBox(width: 20),
                 const IntroductionSection(),
-                const Gap(100),
+                SizedBox(width: 100),
               ],
             ),
           ),

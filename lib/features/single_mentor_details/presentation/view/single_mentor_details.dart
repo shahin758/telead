@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:gap/gap.dart';
 import 'package:telead/core/theme/colors.dart';
 import 'package:telead/core/theme/text_styles.dart';
 import 'package:telead/features/single_mentor_details/presentation/widgets/contact_section.dart';
@@ -29,7 +28,7 @@ class SingleMentorDetails extends StatelessWidget {
               child: Column(
                 children: [
                   const ProfileInstructor(),
-                  const Gap(18),
+                  SizedBox(height: 20),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
@@ -65,7 +64,7 @@ class SingleMentorDetails extends StatelessWidget {
                     ],
                   ),
 
-                  const Gap(30),
+                  SizedBox(height: 30),
                   Row(
                     children: [
                       Expanded(
@@ -75,7 +74,7 @@ class SingleMentorDetails extends StatelessWidget {
                           colorText: AppColors.blackColor,
                         ),
                       ),
-                      const Gap(10),
+                      SizedBox(width: 10),
                       Expanded(
                         child: ContactSection(
                           text: "Message",
@@ -89,7 +88,7 @@ class SingleMentorDetails extends StatelessWidget {
               ),
             ),
 
-            const Gap(20),
+            SizedBox(height: 20),
             Container(
               margin: EdgeInsets.all(16),
               padding: const EdgeInsets.all(16),
@@ -110,7 +109,7 @@ class SingleMentorDetails extends StatelessWidget {
                       textAlign: TextAlign.center,
                     ),
 
-                    const Gap(20),
+                    SizedBox(height: 20),
                     TabBar(
                       indicator: BoxDecoration(color: AppColors.unselectBg),
                       indicatorSize: TabBarIndicatorSize.tab,

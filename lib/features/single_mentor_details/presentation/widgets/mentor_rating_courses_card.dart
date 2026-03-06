@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:gap/gap.dart';
 import 'package:telead/core/constants/app_images.dart';
 import 'package:telead/core/theme/colors.dart';
 import 'package:telead/core/theme/text_styles.dart';
@@ -47,11 +46,11 @@ class MentorListRatingListSection extends StatelessWidget {
                     fontWeight: FontWeight.w600,
                   ),
                 ),
-                Gap(10),
+                SizedBox(height: 10),
                 Row(
                   children: [
                     SvgPicture.asset(mentorList[index].icon),
-                    Gap(4),
+                    SizedBox(width: 4),
                     Text(
                       "578",
                       style: TextStyles.caption2.copyWith(
@@ -59,7 +58,7 @@ class MentorListRatingListSection extends StatelessWidget {
                         fontWeight: FontWeight.w700,
                       ),
                     ),
-                    Gap(10),
+                    SizedBox(width: 10),
                     Text(
                       "2 Weeks Agos",
                       style: TextStyles.caption2.copyWith(
