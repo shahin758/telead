@@ -7,6 +7,7 @@ Telead is a comprehensive e-learning solution designed to bridge the gap between
 <img width="370" height="830" alt="Screenshot_1772758669" src="https://github.com/user-attachments/assets/12fc28f3-8636-4544-88f7-633b9d8b7446" />
 <img width="370" height="830" alt="Screenshot_1772758325" src="https://github.com/user-attachments/assets/c57dd31c-3001-4117-bd80-92a21d6bff65" />
 <img width="370" height="830" alt="Screenshot_1772758339" src="https://github.com/user-attachments/assets/980ec485-fbcd-45fe-b5ce-83115742aeb9" />
+<img width="370" height="830" alt="Screenshot_1772759902" src="https://github.com/user-attachments/assets/a99a4aef-a720-493c-bd19-993f85af548b" />
 <img width="370" height="830" alt="Screenshot_1772758374" src="https://github.com/user-attachments/assets/f09cdd2f-b7da-4072-a3fd-e4d833a6b41f" />
 <img width="370" height="830" alt="Screenshot_1772758383" src="https://github.com/user-attachments/assets/e53018d4-eff9-456b-b1ad-18172604f97b" />
 <img width="370" height="830" alt="Screenshot_1772758390" src="https://github.com/user-attachments/assets/f1b5b84a-7bb7-4e8e-9e69-876dfa48a7a7" />
